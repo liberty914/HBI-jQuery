@@ -1,0 +1,6 @@
+1. 서브라임 포터블 설치
+sublime.com
+테마변경하기 ==> Preferences - color
+한글폰트 편하게쓰기 ==> IME Support
+글자크기 확대,축소 ==> 컨트롤+ +또는-
+
