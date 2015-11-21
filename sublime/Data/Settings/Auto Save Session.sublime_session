@@ -138,6 +138,10 @@
 			{
 				"selected_items":
 				[
+					[
+						"b",
+						"b"
+					]
 				]
 			},
 			"buffers":
@@ -151,10 +155,18 @@
 					}
 				},
 				{
+					"file": "/C/Frontend11/sublime_work/javascript/Step02_function.html",
+					"settings":
+					{
+						"buffer_size": 968,
+						"line_ending": "Windows"
+					}
+				},
+				{
 					"file": "/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
 					"settings":
 					{
-						"buffer_size": 621,
+						"buffer_size": 1266,
 						"line_ending": "Windows"
 					}
 				}
@@ -266,18 +278,18 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
+							"file": "/C/Frontend11/sublime_work/javascript/Step02_function.html",
 							"settings":
 							{
-								"buffer_size": 621,
+								"buffer_size": 968,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										218,
-										218
+										892,
+										892
 									]
 								],
 								"settings":
@@ -285,7 +297,33 @@
 									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 60.0,
+								"translation.y": 513.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
+							"settings":
+							{
+								"buffer_size": 1266,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1101,
+										1101
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 806.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
