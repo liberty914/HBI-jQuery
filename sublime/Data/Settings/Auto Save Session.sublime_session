@@ -155,10 +155,34 @@
 					}
 				},
 				{
-					"file": "/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
+					"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler.html",
 					"settings":
 					{
-						"buffer_size": 125,
+						"buffer_size": 1218,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler2.html",
+					"settings":
+					{
+						"buffer_size": 765,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html",
+					"settings":
+					{
+						"buffer_size": 1871,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step03_Animate.html",
+					"settings":
+					{
+						"buffer_size": 950,
 						"line_ending": "Windows"
 					}
 				}
@@ -195,6 +219,8 @@
 			},
 			"file_history":
 			[
+				"/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html.html",
+				"/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
 				"/C/Frontend11/sublime_work/javascript/hello.html",
 				"/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
 				"/C/Frontend11/sublime_work/javascript/Step02_function.html",
@@ -217,14 +243,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"\"",
 					"tab"
 				],
 				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
+				"in_selection": true,
+				"preserve_case": true,
 				"regex": false,
 				"replace_history":
 				[
+					"'"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -241,7 +269,7 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 4,
 					"sheets":
 					[
 						{
@@ -272,18 +300,18 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
+							"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler.html",
 							"settings":
 							{
-								"buffer_size": 125,
+								"buffer_size": 1218,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										109,
-										109
+										817,
+										818
 									]
 								],
 								"settings":
@@ -291,7 +319,86 @@
 									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 399.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler2.html",
+							"settings":
+							{
+								"buffer_size": 765,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										755,
+										755
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 171.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html",
+							"settings":
+							{
+								"buffer_size": 1871,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1425,
+										1425
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 859.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Frontend11/sublime_work/jquery/Step03_Animate.html",
+							"settings":
+							{
+								"buffer_size": 950,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										511,
+										511
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 308.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -333,7 +440,7 @@
 			"position": "0,0,1,-1,-1,-1,-1,732,143,0,1200",
 			"replace":
 			{
-				"height": 0.0
+				"height": 64.0
 			},
 			"save_all_on_build": true,
 			"select_file":

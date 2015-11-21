@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animate</title>
+
+<style>
+.box { 
+	width: 100px; 
+	height: 100px; 
+	background-color: yellow; 
+	position: relative;
+	border: 1px solid red;
+}
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+window.onload = function() {};
+window.addEventListener('load', function() {});
+//이미지를 포함한 모든 문서객체가 준비되었을 때 실행할 함수 등록
+
+$(document).ready(function() {});
+$(function() {});
+//이미지 로딩을 제외한 모든 문서 객체가 준비 되었을 때 실행할 함수 등록 (2개 동일)
+
+$(function() {
+	$('.box').on('mouseover', function() {
+		console.log('aaa');
+		$(this).animate({
+			'left': '+=25px',  //이렇게도 쓸수있다!
+			'background-color': 'blue',
+			'border': '1px solid black'  //이건 왜 안되는지...?
+		}, function() {
+			$(this).css('background-color', 'pink');
+		});
+	});
+});
+</script>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>

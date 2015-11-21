@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EventHandler</title>
+</head>
+<body>
+	<button onclick=''>눌러봐요</button>
+	<button id='myBtn1'>눌러봐요1</button>
+	<button id='myBtn2'>눌러봐요2</button>
+	<a href="#">링크1</a>
+	<a href="#">링크2</a>
+</body>
+</html>
+
+<style>
+button {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+}
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+(function () {
+	function push() {
+		alert('이런식으로 하는것은 지양해야함.\n절대쓰지 않기로하자.');
+	}
+
+	$('#myBtn1').on('click', function() {  //$().on('eventName', function) ==> addEventListener('eventName', function)
+		console.log(this+'추천하는 방식, 표준이벤트모델!');
+	});
+	$('#myBtn2').on('click', function() {
+		console.log(this+'추천하는 방식, 표준이벤트모델!');
+	});
+
+	//focus & blur
+	$('button').first().on('focus', function() {
+		$(this).css('background-color', 'green');
+	});
+	$('button').first().on('blur', function() {
+		$(this).css('background-color', 'white');
+	});
+
+	//mouseover & mouseleave
+	$('button').last().on('mouseover', function() {
+		$(this).css('background-color', 'blue');
+	});
+	$('button').last().on('mouseleave', function() {
+		$(this).css('background-color', 'white');
+	});
+
+	
+})();
+</script>

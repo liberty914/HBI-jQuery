@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show & Hide</title>
+</head>
+<body>
+	<button id='hideBtn'>숨기기</button>
+	<button id='showBtn'>보이기</button>
+	<button id='toggleBtn'>토글버튼</button>
+	<button id='fadeToBtn'>fadeTo 0.5</button> <br/>
+	<img src='images/image1.png' alt='이미지1' />
+</body>
+</html>
+
+<style>
+img { width: 200px; }
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+//Show & Hide & Toggle
+$('#hideBtn').on('click', function() {
+});  //방법1
+$('#hideBtn').click(function() {  //방법2
+	console.log('숨기기버튼 클릭됨')
+	//$('img').css('display', 'none');
+	//$('img').hide();
+	$('img').fadeOut();
+	//$('img').slideDown();
+});
+$('#showBtn').click(function() {  //방법2
+	console.log('보이기버튼 클릭됨')
+	//$('img').css('display', 'initial');
+	//$('img').show();
+	$('img').fadeIn();
+	//$('img').slideUp();
+});
+$('#toggleBtn').click(function() {  //방법2
+	console.log('토글버튼 클릭됨')
+	//$('img').toggle();
+	//$('img').fadeToggle('', function() {  //가장 적절한게 0.4초정도 되는듯
+	//	alert('안녕!');
+	//});  //duration, completeFunction 을 지정가능
+	$('img').fadeToggle({  //object를 전달함으로써 수많은 상세기능을 이용가능!
+		duration: 1000,
+		//easing: 'swing',
+		//queue: true,
+		//specialEasing: {},
+		//step: function(now, tween) {},
+		//progress: function(animation, progress, remainningMs) {},
+		complete: function() {  //가장 적절한게 0.4초정도 되는듯
+			alert('안녕!');
+		}
+		//start: function(animation) {},
+		//done: function(animation, )
+		//fail:
+		//always:
+	});  //duration, completeFunction 을 지정가능
+	//$('img').slideToggle();
+});
+$('img').on('mouseover', (function() {  //방법2
+	console.log('마우스 오버됨');
+	$(this).fadeTo(300, 1);
+}));
+$('img').on('mouseleave', (function() {  //방법2
+	console.log('마우스 떠남');
+	$(this).fadeTo(300, 0.2);
+}));
+/*
+	hide - show - toggle
+	fadeOut - fadeIn - fadeToggle
+	slideDown - slideUp - slideToggle  이렇게 3개는 한세트임.
+*/
+//  http://api.jquery.com/slideDown/
+
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EventHandler2</title>
+</head>
+<body>
+	<img id='one' src="images/image1.png" alt="이미지1">
+	<img id='two' src="images/image2.png" alt="이미지2">
+	<img id='three' src="images/image3.png" alt="이미지3">
+</body>
+</html>
+
+<style>
+img { width: 200px; }
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+	$('img').on('mouseover', function() {
+		console.log($(this).context.src);
+		//$(this).css('background-color', 'yellow');
+		//$('img').attr('src', 'images/image1.png');  //모든 img가 선택됨
+		$(this).attr('src', 'images/image6.png');
+		//이벤트가 일어난 요소를 선택해서 동작
+	});
+	$('img').on('mouseleave', function() {
+		console.log($(this).context.src);
+		$(this).attr('src', 'images/image1.png');
+	});
+</script>
