@@ -138,27 +138,68 @@
 			{
 				"selected_items":
 				[
+					[
+						"b",
+						"b"
+					]
 				]
 			},
 			"buffers":
 			[
 				{
-					"file": "/C/Frontend11/sublime_work/javascript/hello.html",
+					"file": "/C/Frontend11/sublime_work/jquery/hello_jquery.html",
 					"settings":
 					{
-						"buffer_size": 179,
+						"buffer_size": 1352,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n",
+					"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler.html",
 					"settings":
 					{
-						"buffer_size": 1688,
-						"line_ending": "Windows",
-						"name": "Package Control Messages",
-						"read_only": true,
-						"scratch": true
+						"buffer_size": 1218,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler2.html",
+					"settings":
+					{
+						"buffer_size": 765,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html",
+					"settings":
+					{
+						"buffer_size": 1871,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step03_Animate.html",
+					"settings":
+					{
+						"buffer_size": 950,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step04_Class.html",
+					"settings":
+					{
+						"buffer_size": 708,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step04_Class2.html",
+					"settings":
+					{
+						"buffer_size": 2337,
+						"line_ending": "Windows"
 					}
 				}
 			],
@@ -194,6 +235,11 @@
 			},
 			"file_history":
 			[
+				"/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html.html",
+				"/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
+				"/C/Frontend11/sublime_work/javascript/hello.html",
+				"/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
+				"/C/Frontend11/sublime_work/javascript/Step02_function.html",
 				"/C/Frontend11/sublime/Data/Packages/User/Package Control.sublime-settings",
 				"/C/Frontend11/sublime/Data/Packages/Package Control/Package Control.sublime-settings"
 			],
@@ -213,14 +259,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"\"",
 					"tab"
 				],
 				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
+				"in_selection": true,
+				"preserve_case": true,
 				"regex": false,
 				"replace_history":
 				[
+					"'"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -237,23 +285,75 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 6,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Frontend11/sublime_work/javascript/hello.html",
+							"file": "/C/Frontend11/sublime_work/jquery/hello_jquery.html",
 							"settings":
 							{
-								"buffer_size": 179,
+								"buffer_size": 1352,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										22,
-										22
+										1059,
+										1059
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 346.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler.html",
+							"settings":
+							{
+								"buffer_size": 1218,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										817,
+										818
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 399.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Frontend11/sublime_work/jquery/Step01_EventHandler2.html",
+							"settings":
+							{
+								"buffer_size": 765,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										755,
+										755
 									]
 								],
 								"settings":
@@ -262,35 +362,111 @@
 									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 171.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
-							"buffer": 1,
+							"buffer": 3,
+							"file": "/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html",
 							"settings":
 							{
-								"buffer_size": 1688,
+								"buffer_size": 1871,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										308,
-										308
+										1425,
+										1425
 									]
 								],
 								"settings":
 								{
-									"auto_indent": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_width": 2,
-									"word_wrap": true
+									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 859.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Frontend11/sublime_work/jquery/Step03_Animate.html",
+							"settings":
+							{
+								"buffer_size": 950,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										496,
+										496
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 308.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/Frontend11/sublime_work/jquery/Step04_Class.html",
+							"settings":
+							{
+								"buffer_size": 708,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										657,
+										657
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 228.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/Frontend11/sublime_work/jquery/Step04_Class2.html",
+							"settings":
+							{
+								"buffer_size": 2337,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1792,
+										1792
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 798.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -329,10 +505,10 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "0,0,1,-32000,-32000,-1,-1,732,143,0,1200",
+			"position": "0,0,1,-1,-1,-1,-1,732,188,0,1245",
 			"replace":
 			{
-				"height": 0.0
+				"height": 64.0
 			},
 			"save_all_on_build": true,
 			"select_file":
