@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class</title>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>
+
+<style>
+.bg-yellow { background-color: yellow; }
+.box { width: 100px; height: 100px; border: 1px solid red; }
+</style>
+
+<script src='js/jquery-2.1.4.css'></script>
+<!-- 그냥 확장자를 .css 로 바꿔도 된다. 어차피 문자열을 로드하는것이기 때문! -->
+<script>
+//addClass & removeClass & toggleClass
+	$('.box').on('mouseover', function() {
+		$(this).addClass('bg-yellow');
+	});
+	$('.box').on('mouseleave', function() {
+		$(this).removeClass('bg-yellow');
+	});
+	$('.box').on('mousedown', function() {
+		$(this).toggleClass('bg-yellow');
+	});
+</script>

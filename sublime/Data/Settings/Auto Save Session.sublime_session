@@ -185,6 +185,22 @@
 						"buffer_size": 950,
 						"line_ending": "Windows"
 					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step04_Class.html",
+					"settings":
+					{
+						"buffer_size": 708,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Frontend11/sublime_work/jquery/Step04_Class2.html",
+					"settings":
+					{
+						"buffer_size": 2326,
+						"line_ending": "Windows"
+					}
 				}
 			],
 			"build_system": "",
@@ -269,7 +285,7 @@
 			"groups":
 			[
 				{
-					"selected": 4,
+					"selected": 6,
 					"sheets":
 					[
 						{
@@ -389,8 +405,8 @@
 								"selection":
 								[
 									[
-										511,
-										511
+										496,
+										496
 									]
 								],
 								"settings":
@@ -399,6 +415,58 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 308.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/C/Frontend11/sublime_work/jquery/Step04_Class.html",
+							"settings":
+							{
+								"buffer_size": 708,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										657,
+										657
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 228.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/C/Frontend11/sublime_work/jquery/Step04_Class2.html",
+							"settings":
+							{
+								"buffer_size": 2326,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1745,
+										1745
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 612.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"

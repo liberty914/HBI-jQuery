@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class2</title>
+</head>
+<body>
+	<ul>
+		<li><a href='#one' class='active'>one</a></li>
+		<li><a href='#two'>two</a></li>
+		<li><a href='#three'>three</a></li>
+	</ul>
+	<div id='tabContents'>
+		<p id='one'>one Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit velit sapiente dignissimos exercitationem molestias odio illum quas, hic expedita voluptatem! Sapiente enim eveniet aut quam hic laudantium error ex!</p>
+		<p id='two'>two Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit velit sapiente dignissimos exercitationem molestias odio illum quas, hic expedita voluptatem! Sapiente enim eveniet aut quam hic laudantium error ex!</p>
+		<p id='three'>three Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit velit sapiente dignissimos exercitationem molestias odio illum quas, hic expedita voluptatem! Sapiente enim eveniet aut quam hic laudantium error ex!</p>
+	</div>
+	<span class='fa fa-twitter'></span>
+	<span class='fa fa-facebook fa-spin'></span>
+</body>
+</html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<style>
+ul { list-style-type: none; overflow: hidden; width: 300px; }
+ul li { float: left; width: 100px; }
+ul li a { display: block; padding: 10px; width: 80px; }
+ul li a:hover { background-color: #eeeeee; }
+.active { background-color: #cecece; color: white; }
+/* navigation bar 를 만드는 전형적인 스타일 */
+
+#tabContents p { display: none; }
+#tabContents p:nth-child(1) { display: block; }
+/* 단일페이지 어플리케이션의 전형적인 스타일 */
+
+.fa-twitter, .fa-facebook { 
+	font-size: 50px; 
+	color: white; 
+	background-color: blue; 
+	width: 100px; 
+	height: 100px; 
+	text-align:center; 
+	border-radius: 30%; }
+</style>
+
+<script src='js/jquery-2.1.4.css'></script>
+<script>
+$('ul > li > a').on('click', function() {
+	$('ul > li > a').removeClass('active');  //모든 a태그의 active클래스 제거
+	$(this).addClass('active');  //지금 클릭된태그의 active클래스 추가
+
+	$('#tabContents > p').hide();  //모든 탭 컨텐츠를 안보이게함.
+	var selector = $(this).attr('href');  //클릭한것의 href속성의 값을 가져와서
+	$(selector).fadeIn();  //그 속성 (#one) 을 그대로 대입하고 show()메소드 호출!
+	//그러나 '뒤로'버튼을 클릭했을때, 내용도 돌아가지는 않는다.
+	//==> 그러므로 URL에서 파싱해오는것이 가장 좋을것 같다.
+});  //==> 탭, 네비게이션에 대한 기초적인 로직
+
+</script>
