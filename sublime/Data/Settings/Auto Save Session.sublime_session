@@ -147,26 +147,18 @@
 			"buffers":
 			[
 				{
-					"file": "/C/Frontend11/sublime_work/javascript/hello.html",
+					"file": "/C/Frontend11/sublime_work/jquery/hello_jquery.html",
 					"settings":
 					{
-						"buffer_size": 601,
+						"buffer_size": 1352,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/Frontend11/sublime_work/javascript/Step02_function.html",
+					"file": "/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
 					"settings":
 					{
-						"buffer_size": 968,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
-					"settings":
-					{
-						"buffer_size": 1266,
+						"buffer_size": 125,
 						"line_ending": "Windows"
 					}
 				}
@@ -203,6 +195,9 @@
 			},
 			"file_history":
 			[
+				"/C/Frontend11/sublime_work/javascript/hello.html",
+				"/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
+				"/C/Frontend11/sublime_work/javascript/Step02_function.html",
 				"/C/Frontend11/sublime/Data/Packages/User/Package Control.sublime-settings",
 				"/C/Frontend11/sublime/Data/Packages/Package Control/Package Control.sublime-settings"
 			],
@@ -251,45 +246,44 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Frontend11/sublime_work/javascript/hello.html",
+							"file": "/C/Frontend11/sublime_work/jquery/hello_jquery.html",
 							"settings":
 							{
-								"buffer_size": 601,
+								"buffer_size": 1352,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										538,
-										538
+										1059,
+										1059
 									]
 								],
 								"settings":
 								{
-									"auto_name": "",
 									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 521.0,
+								"translation.y": 346.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Frontend11/sublime_work/javascript/Step02_function.html",
+							"file": "/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
 							"settings":
 							{
-								"buffer_size": 968,
+								"buffer_size": 125,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										630,
-										630
+										109,
+										109
 									]
 								],
 								"settings":
@@ -297,33 +291,7 @@
 									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 513.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
-							"settings":
-							{
-								"buffer_size": 1266,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1101,
-										1101
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 806.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
