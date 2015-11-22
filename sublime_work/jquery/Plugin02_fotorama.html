@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin_fotorama</title>
+</head>
+<body>
+<div class='fotorama'
+     data-width='300px'
+     data-height='300px'>
+	<img src="images/image1.png" alt="image1">
+	<img src="images/image2.png" alt="image2">
+	<img src="images/image3.png" alt="image3">
+	<img src="images/image4.png" alt="image4">
+	<img src="images/image5.png" alt="image5">
+</div>
+<div class='fotorama'
+     data-width='100%'
+     data-ratio='4/2'
+     data-nav='thumbs'
+     data-allowFullScreen='true'>
+	<!-- 반응형 웹의 경우, 가로4 세로2로 표현, 썸네일 표현, 풀스크린 여부 -->
+	<a href="images/image1.png">
+		<img src="images/1.jpg" alt="image1">  <!--썸네일을 클릭하면-->
+	</a>                                       <!--그때 원본이미지 로딩-->
+	<a href="images/image2.png">
+		<img src="images/2.jpg" alt="image2">
+	</a>
+	<a href="images/image3.png">
+		<img src="images/3.jpg" alt="image3">
+	</a>
+	<a href="images/image4.png">
+		<img src="images/4.jpg" alt="image4">
+	</a>
+	<a href="images/image5.png">
+		<img src="images/5.jpg" alt="image5">
+	</a>
+</div>
+</body>
+</html>
+
+<link rel='stylesheet' href='css/fotorama.css' />
+<script src='js/jquery-2.1.4.js'></script>
+<script src='js/fotorama.js'></script>

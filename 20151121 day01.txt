@@ -68,21 +68,69 @@ var result = emailReg.test(inputEmail);
 
 
 
-6. jQuery 플러그인
+6. jQuery 플러그인 (http://plugins.jquery.com/)
 - 기본적으로 플러그인의 메소드에 전달하는 인자는
  {} ==> object를 사용한다.
 
+1. imgLiquid (이미지 리퀴드)
+https://github.com/karacas/imgLiquid
+==> 주어진 폭과 높이가 꽉 맞춰주면서,
+ 이미지가 짤리더라도 비율을 맞도록해주는 플러그인
+
+2. fotorama (포토라마, p가 아님)
+http://fotorama.io/
+==> 이미지 슬라이더 제공
+   *모바일에서 터치까지 된다!
+    이러니까 플러그인 써야됨!!!
+
+3. Lazy Load (레이지 로드)
+http://plugins.jquery.com/lazyload/
+https://github.com/tuupola/jquery_lazyload
+==> 사용자가 스크롤을 내렸을때, 동적으로 컨텐츠를 로딩하는 플러그인
+(1) 최소한 img태그의 height속성은 결정이 되어있어야한다.
+(2) img의 src속성을 쓰지말고, data-original 속성을 사용한다.
+
+
+
+4. scroll magic
+http://plugins.jquery.com/ScrollMagic/
+http://scrollmagic.io/
+==> 패럴렉스 스크롤링 지원
+
+https://greensock.com/
+
+
+
++. Scrollorama
+http://plugins.jquery.com/Scrollorama/
+==> 패럴렉스 스크롤링
 
 
 
 
+5. SVG Editor
+http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html
+==> HTML5에서 Vector이미지를 편집할수 있는 도구
+그대로 복사붙여넣기하면 됨.
 
 
 
+6. Animate.css
+https://daneden.github.io/animate.css/
+https://github.com/daneden/animate.css
+
+
+7. Smooth Scroll
+http://plugins.jquery.com/smooth-scroll/
+깃허브 사용법에서는 
+scrollTarget 이라고 써져있지만
+scrollElement 가 맞다. (개발자가 관리를안하는듯)
 
 
 
-
+* 다음 API의 스크롤기술같은경우
+1. scroll 이벤트가 발생한 순간에
+2. 콜백으로 scrollTo() 메소드를 호출한다고함.
 
 
 

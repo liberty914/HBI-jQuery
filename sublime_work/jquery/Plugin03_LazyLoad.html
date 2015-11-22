@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin_LazyLoad</title>
+</head>
+<body>
+	<div>
+		<img data-original="images/image1.png"/>
+	</div>
+	<div class="spacer"></div>
+	<div>
+		<img data-original="images/image2.png"/>
+	</div>
+	<div class="spacer"></div>
+	<div>
+		<img data-original="images/image3.png"/>
+	</div>
+	<div class="spacer"></div>
+	<div>
+		<img data-original="images/image4.png"/>
+	</div>
+	<div class="spacer"></div>
+	<div>
+		<img data-original="images/image5.png"/>
+	</div>
+	<div class="spacer"></div>
+</body>
+</html>
+
+<style>
+.spacer { height: 500px; background-color: #cecece; }
+img { width: 300px; height: 300px; }
+/*  이미지의 폭은 상관없지만 height는 반드시 결정되어있어야 한다.  */
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script src='js/jquery.lazyload.js'></script>
+<script>
+$("img").lazyload({
+	effect:"fadeIn"
+});
+</script>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Smooth Scroll</title>
+</head>
+<body>
+<div class='navbar'>
+	<a href="#one">one</a>
+	<a href="#two">two</a>
+	<a href="#three">three</a>
+</div>
+<div class='spacer'></div>
+<div id='one'>
+	<h3>One</h3>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veritatis minus magnam enim, aut incidunt possimus neque quas eum natus ipsa, placeat iste temporibus, repudiandae nesciunt vel! Possimus, quidem, eaque.
+</div>
+<div class='spacer'></div>
+<div id='two'>
+	<h3>Two</h3>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam voluptatum atque qui recusandae quisquam maxime, fugit officia id consequatur, unde ipsum nam! Eveniet cupiditate, dicta veritatis alias accusamus aliquid.
+</div>
+<div class='spacer'></div>
+<div id='three'>
+	<h3>Three</h3>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aliquam autem quae consectetur pariatur dolorem officiis quaerat maxime in modi distinctio suscipit cumque iste, necessitatibus odit, praesentium deleniti, eum ullam!
+</div>
+
+<hr/>
+<hr/>
+<hr/>
+
+<a class='SS' href='#first'>first</a>
+<a class='SS' href='#second'>second</a>
+<div class='local'>
+	<div class="spacer"></div>
+	<div id="first">
+		<h6>First</h6>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum nesciunt et vitae, iure. Aspernatur, atque, ex? Dolorum quidem possimus et. Ab ipsam facere beatae quo, dolorem quod sapiente accusantium.</div>
+	<div class="spacer"></div>
+	<div id="second">
+		<h6>Second</h6>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut facere consectetur, qui corporis. Cupiditate sunt nobis porro enim aliquid repellat dolor deleniti nostrum quam, nihil fuga minus, illo doloribus.</div>
+	<div class="spacer"></div>
+</div>
+</body>
+</html>
+
+<style>
+.spacer { height: 500px; background-color: #cecece; }
+.navbar { 
+	position: fixed; 
+	width: 100%; 
+	top: 0; 
+	left: 0; 
+	height: 50px; 
+	background-color: #000000; 
+}
+.navbar a { color: #ffffff; }
+.local { height: 300px; overflow-y: scroll; }
+body { padding-top: 50px; }
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script src='js/jquery.smooth-scroll.js'></script>
+<script>
+$('.navbar a').smoothScroll({
+	offset: -60,
+	scrollElement: null,  //디폴트는 body태그를 스크롤함
+	afterScroll: function() {
+		console.log($(this)+'스크롤 끝났음!');
+	},
+	speed: 400
+});
+$('.SS').smoothScroll({
+	scrollElement: $('.local')
+});
+</script>
