@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom객체 Make</title>
+</head>
+<body>
+<input type='text' id='inputMsg' />
+<button id='addBtn'>추가</button>
+<ul>
+	<li>하나</li>
+	<li>두울</li>
+</ul>
+<div class='image-panel'>
+	<div class='panel'>
+		<h3>이미지1</h3>
+		<img src='images/image1.png' />
+	</div>
+</div>
+<button id='moreBtn'>더보기</button>
+</body>
+</html>
+
+<style>
+.panel { border: 1px solid red; border-radius: 10px; width: 200px; }
+.panel img { max-width: 100%; }
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+/*  문서객체 만드는 3가지 방법
+  document.createElement('li');
+  $('<li></li>')
+  $('<li/>');                 */
+(function () {
+
+	$('<li/>').text('영').prependTo('html > body > ul'); //첫번째 자식으로
+	$('<li/>').text('세엣').appendTo('html > body > ul');  //마지막 자식으로
+	//==> 스크롤이 맨 밑으로 내려가면 동적으로 ajax로 서버에서 데이터를 받아서 appendTo() 로 추가함.
+
+	$('<img/>')
+	.attr('src', 'images/image1.png')
+	.attr('width', '100px')
+	.attr('height', '100px')
+	.appendTo('html > body > ul');
+
+	$('#addBtn').click(function() {
+		var msg = $('#inputMsg').val();  //입력한 문자열 읽어오기
+		if (msg !== '') {
+			$('<li/>').text(msg).appendTo('html > body > ul');
+			$('#inputMsg').val('').focus();
+			$('#addBtn').attr('disabled', 'true');
+		}
+	});
+
+	$('#inputMsg').keyup(function(event) {
+		var keyCode = event.keyCode;
+		console.log(keyCode);  //아스키코드값이 출력됨!
+		if ($('#inputMsg').val().length !== 0) {
+			$('#addBtn').attr('disabled', 'false');
+		}
+		if (keyCode === 13) {  //엔터키를 눌렀다면 경우,
+			$('#addBtn').click();  //버튼의 클릭이벤트를 실행!
+		}
+	});
+
+	//"더보기" 버튼 클릭
+	$('#moreBtn').click(function() {
+		//추가될 이미지 정보
+		var items = [{
+			title: '이미지2',
+			src: 'images/image2.png'
+		}];
+		//var $div = $('<div/>').addClass('panel');
+		//일단 미리 조립하고, 어떻게 최적화시킬지는 나중에 고민.
+		var $h3 = $('<h3/>').text(items[0].title);
+		var $img = $('<img/>').attr('src', items[0].src);
+		//네이밍 룰, jQuery로 부터 return받은 객체의 변수는 '$'를 붙인다.
+		$('<div/>')
+		.addClass('panel')
+		.append($h3)
+		.append($img)
+		.appendTo('.image-panel')
+		.hide()
+		.slideDown();  //fadeIn 등등
+	});
+
+})();
+</script>

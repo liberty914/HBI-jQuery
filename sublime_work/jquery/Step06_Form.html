@@ -5,11 +5,11 @@
 	<title>Form</title>
 </head>
 <body>
-	<form id='myForm' action='javascript:' method='post'>
+	<form id='myForm' action='login_action' method='post'>
 	<!-- a태그의 href와 마찬가지로 javascript: 를 action에 넣어주면
 		폼태그가 작동하지 않는다! -->
 		<label for='id'>아이디</label>
-		<input type='text' id='id' name='name' />
+		<input type='text' id='id' name='name' /><br/>
 		<label for='pwd'>비밀번호</label>
 		<input type='password' id='pwd' name='pwd' />
 		<button type='submit'>로그인</button>
@@ -20,6 +20,20 @@
 <script src='js/jquery-2.1.4.js'></script>
 <script>
 $('#myForm').submit(function() {
-	return false;
+	var inputId = $('#id').val();
+	if(inputId == '') {
+		alert('아이디를 입력하세요!');
+		$('#id').focus();  //포커스 주기
+		return false;  //form태그의 submit기능을 못하게함!
+	}
+
+	var inputPwd = $('#pwd').val();
+	if(inputPwd == '') {
+		alert('비밀번호를 입력하세요!');
+		$('#pwd').focus();
+		return false;
+	}
 });
+//document.getElementById('pwd').value;
+
 </script>
