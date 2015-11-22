@@ -22,10 +22,10 @@ lorem + 탭 ==> 자동으로 의미없는 문자열을 채워줌
 
 
 
-
 2. jquery.com 에서 제이쿼리 다운로드
 min.js ==> 클라이언트의 속도가 빠르게, 개행, 공백 모두 제거된것
 js  ==> 개발자가 보기쉽게 개행, 공백이 포함되어있는것
+
 
 
 3. jQuery API문서 확인
@@ -37,12 +37,42 @@ http://api.jquery.com/slideDown/
 .animate()
 
 
+
 4. 폰트 어썸 - 아이콘을 폰트로 무료제공!
 ==> 속도도 빠르고, css활용(크기, 색상 등)이 매우 자유롭다.
 https://fortawesome.github.io/Font-Awesome/
 
 CDN을 가지고 쓰면된다.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+다운로드하면 css폴더와 font폴더만 쓰면된다.
+css폴더에서 상대경로를 이용해서 font폴더를 참조하고있다.
+html문서에서 link태그로 css만 걸어주면 됨.
+
+<span class='fa fa-twitter'></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<form id='myForm' action='javascript:' method='post'>
+	<!-- a태그의 href와 마찬가지로 javascript: 를 action에 넣어주면
+		폼태그가 작동하지 않는다! -->
+		<label for='id'>아이디</label>
+		<input type='text' id='id' name='name' />
+		<label for='pwd'>비밀번호</label>
+		<input type='password' id='pwd' name='pwd' />
+		<button type='submit'>로그인</button>
+	</form>
+</body>
+</html>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+$('#myForm').submit(function() {
+	return false;
+});
+</script>
