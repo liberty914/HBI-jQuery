@@ -6,8 +6,11 @@ https://larsjung.de/jquery-qrcode/
 
 
 
+NodeJS 설치, Stable 5.1.0 버전으로 하였음
 
-
+선생님이 공유해주신 폴더(server)로 이동후
+이곳에서 명령프롬프트 열기,
+npm start
 
 
 

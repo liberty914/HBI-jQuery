@@ -1,3 +1,7 @@
+
+//서버단 프로그래밍은 app.js에서 한다.
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -24,6 +28,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+
+
+//========== 맵핑 로직 시작 ===============================================================
+
+
+//post방식 "/login" 요청 처리
+app.post('/login', function(req, res) {
+  var id = req.body.id;
+  var pwd = req.body.pwd;  //전송된 아이디 비밀번호 읽어오기
+  
+  console.log(id+'/'+pwd);  //서버측 콘솔창에 출력해보기
+  res.end('ok!');  //웹 브라우저에 문자열 응답하기
+});
+
+
+//======== 이 아래는 선생님꺼 ============================
 
 //post 방식 "/httpTest" 요청 처리 
 app.post("/httpTest", function(req, res){
@@ -65,6 +86,11 @@ app.get("/jsonpTest2", function(req, res){
   console.log(name+"/"+addr);
   res.jsonp({response:"ok Client !"});
 });
+
+
+//========== 맵핑 로직 종료 ===============================================================================
+
+
 //셈플 데이터 
 var list=[{
   num:0,
