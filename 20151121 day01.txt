@@ -1,0 +1,142 @@
+1. 서브라임 텍스트 2 포터블 설치
+http://www.sublimetext.com/2
+
+테마변경하기
+==> Preferences - color Scheme
+
+글자크기 확대,축소
+==> 컨트롤 + 또는 -
+
+한글폰트 편하게쓰기
+==> Preferences - Package Control
+   - pci - IMESupport
+
+젠코딩(Zen Coding)
+==> Preferences - Package Control
+   - pci - Emmet (이클립스에서도 플러그인설치가능)
+ul#myId>li.myClass{li $ 입니다.}*5>div*2
+텍스트노드는 중괄호로 작성가능하며, $는 숫자를 1부터 표시
+http://docs.emmet.io/cheat-sheet/
+
+lorem + 탭 ==> 자동으로 의미없는 문자열을 채워줌
+
+
+
+2. jquery.com 에서 제이쿼리 다운로드
+min.js ==> 클라이언트의 속도가 빠르게, 개행, 공백 모두 제거된것
+js  ==> 개발자가 보기쉽게 개행, 공백이 포함되어있는것
+
+
+
+3. jQuery API문서 확인
+http://api.jquery.com/slideDown/
+.fadeIn()
+.fadeOut()
+.fadeTo()
+.fadeToggle()
+.animate()
+
+
+
+4. 폰트 어썸 - 아이콘을 폰트로 무료제공!
+==> 속도도 빠르고, css활용(크기, 색상 등)이 매우 자유롭다.
+https://fortawesome.github.io/Font-Awesome/
+
+CDN을 가지고 쓰면된다.
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+다운로드하면 css폴더와 font폴더만 쓰면된다.
+css폴더에서 상대경로를 이용해서 font폴더를 참조하고있다.
+html문서에서 link태그로 css만 걸어주면 됨.
+
+<span class='fa fa-twitter'></span>
+
+
+
+
+
+5. Form태그
+- 벨리데이션체크
+- 이메일 정규표현식 객체 (정규식은 슬러시로 시작하고 슬러시로 끝난다)
+var inputEmail = $('input[name=email]').val();
+var emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;
+var result = emailReg.test(inputEmail);
+- keydown, keyup 을 이용한 실시간체크
+  (한글의 경우, 모두 입력하기 전까지 입력한게 아니게됨.
+   그래서 keyup을 사용해야한다.)
+
+
+
+
+6. jQuery 플러그인 (http://plugins.jquery.com/)
+- 기본적으로 플러그인의 메소드에 전달하는 인자는
+ {} ==> object를 사용한다.
+
+1. imgLiquid (이미지 리퀴드)
+https://github.com/karacas/imgLiquid
+==> 주어진 폭과 높이가 꽉 맞춰주면서,
+ 이미지가 짤리더라도 비율을 맞도록해주는 플러그인
+
+2. fotorama (포토라마, p가 아님)
+http://fotorama.io/
+==> 이미지 슬라이더 제공
+   *모바일에서 터치까지 된다!
+    이러니까 플러그인 써야됨!!!
+
+3. Lazy Load (레이지 로드)
+http://plugins.jquery.com/lazyload/
+https://github.com/tuupola/jquery_lazyload
+==> 사용자가 스크롤을 내렸을때, 동적으로 컨텐츠를 로딩하는 플러그인
+(1) 최소한 img태그의 height속성은 결정이 되어있어야한다.
+(2) img의 src속성을 쓰지말고, data-original 속성을 사용한다.
+
+
+
+4. scroll magic
+http://plugins.jquery.com/ScrollMagic/
+http://scrollmagic.io/
+==> 패럴렉스 스크롤링 지원
+
+https://greensock.com/
+
+
+
++. Scrollorama
+http://plugins.jquery.com/Scrollorama/
+==> 패럴렉스 스크롤링
+
+
+
+
+5. SVG Editor
+http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html
+==> HTML5에서 Vector이미지를 편집할수 있는 도구
+그대로 복사붙여넣기하면 됨.
+
+
+
+6. Animate.css
+https://daneden.github.io/animate.css/
+https://github.com/daneden/animate.css
+
+
+7. Smooth Scroll
+http://plugins.jquery.com/smooth-scroll/
+깃허브 사용법에서는 
+scrollTarget 이라고 써져있지만
+scrollElement 가 맞다. (개발자가 관리를안하는듯)
+
+
+
+* 다음 API의 스크롤기술같은경우
+1. scroll 이벤트가 발생한 순간에
+2. 콜백으로 scrollTo() 메소드를 호출한다고함.
+
+
+
+
+
+
+
+
+

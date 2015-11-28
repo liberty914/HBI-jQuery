@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QR코드 플러그인</title>
+</head>
+<body>
+	<div id='qrcode'></div>
+</body>
+</html>
+
+<style>
+
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script src='js/jquery.qrcode-0.12.0.js'></script>
+<script>
+	$('#qrcode').qrcode({
+    // render method: 'canvas', 'image' or 'div' (div는 깔끔하다)
+    render: 'div',
+
+    // content (QR코드를 통해 연결할 무언가, 링크, 단순한 텍스트도 됨)
+    text: 'http://study.kimgura.net',
+
+    // size in pixel (QR코드의 사이즈)
+    size: 150,
+
+    // code color or image element (QR코드의 색상, #000형식도 가능)
+    fill: 'lightgreen',
+
+    // version range somewhere in 1 .. 40
+    minVersion: 1,
+    maxVersion: 40,
+
+    // error correction level: 'L', 'M', 'Q' or 'H'
+    ecLevel: 'L',
+
+    // offset in pixel if drawn onto existing canvas
+    left: 0,
+    top: 0,
+
+    // background color or image element, null for transparent background
+    background: null,
+
+    // corner radius relative to module width: 0.0 .. 0.5
+    radius: 0,
+
+    // quiet zone in modules
+    quiet: 0,
+
+    // modes
+    // 0: normal
+    // 1: label strip
+    // 2: label box
+    // 3: image strip
+    // 4: image box
+    mode: 0,
+
+    mSize: 0.1,
+    mPosX: 0.5,
+    mPosY: 0.5,
+
+    label: 'no label',
+    fontname: 'sans',
+    fontcolor: '#000',
+
+    image: null
+});
+</script>

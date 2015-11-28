@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_Function.html</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+<script>
+(function(){ 
+	var aaa = 0;
+	console.log('만들자마자 한번쓰고 버리는 함수');
+})();
+//★★★만들자마자 한번쓰고 버리는 함수
+//==> 이것은 전역변수를 사용하지 않도록 스크립트 전체를 감싸는 역할을 하는 아주 중요한 함수형식이다.
+
+
+//(function() {
+	(function(){ 
+		var aaa = 0;
+		console.log('만들자마자 한번쓰고 버리는 함수');
+	})();
+
+	var a = function() {
+		console.log('a()');
+		//함수의 return 값이 없을경우엔 무조건 undefined가 리턴된다. (디폴트!)
+		//return void 와는 조금 다른듯하다.
+	};
+	var result = a();
+	console.log('result 는 ? ==> '+result);  //undefined
+
+	var getNum = function() {
+		return 999;
+	};
+	var getStr = function() {
+		return '하하하';
+	};
+	var getObj = function() {
+		return {num: 2, name: 'Rex'};
+	};
+
+	var a = getNum;  //function (참조값)
+	var b = getNum();  //999
+	var c = getObj;  //function (참조값)
+	console.log(a);
+	console.log(b);
+	console.log(c);
+
+	var showSum = function (a, b) {  //받으려는 인자에 전달이 안되면 undefined
+		console.log(a+b);
+	};
+//})();
+</script>

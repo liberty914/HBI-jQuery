@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin_imgLiquid</title>
+</head>
+<body>
+<div class='imagePanel'>
+	<img src='images/1.jpg' />
+</div>
+<div class='imagePanel'>
+	<img src='images/2.jpg' />
+</div>
+<div class='imagePanel'>
+	<img src='images/3.jpg' />
+</div>
+</body>
+</html>
+
+<style>
+.imagePanel { width: 200px; height: 200px; border: 1px solid red; }
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script src='js/imgLiquid.js'></script>
+<script>
+$('.imagePanel').imgLiquid({
+	fill: true,
+	horizontalAlign: '50%',  //50% 디폴트
+	verticalAlign: '50%'  //숫자가 높을수록 우측,아래측으로 움직인다.
+});
+</script>

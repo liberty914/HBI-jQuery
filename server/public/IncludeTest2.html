@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>IncludeTest2.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script src="js/angular.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",[]);
+	myApp.controller("one",["$scope",function($scope){
+		$scope.template={name:"footer", url:"/fragment/footer.html"};
+	}]);
+	</script>
+</head>
+<body ng-controller="one">
+	<h3>include test2</h3>
+	<p>{{template.name}}</p>
+	<div ng-include="template.url"></div>
+</body>
+</html>

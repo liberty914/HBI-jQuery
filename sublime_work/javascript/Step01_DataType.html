@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_DataType.html</title>
+	<style>
+	/*  여기는 CSS 영역입니다. */
+	h2 { color: green;}
+	</style>
+	<script>
+	alert('페이지로딩 1');
+	</script>
+</head>
+<body>
+	<script>
+	alert('페이지로딩 2');
+	</script>
+	<h1>html 영역 입니다.</h1>
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate autem tempora obcaecati vel est unde maxime alias nihil earum officia? Odit iusto quo unde repellat qui cupiditate ratione nam quidem.</h2>
+	<script>
+	alert('페이지로딩 3');
+	</script>
+</body>
+</html>
+<script>
+//여기는 JavaScript 영역입니다.
+alert('페이지가 로딩이 완료되었습니다.');
+var obj;  //전역변수 선언 및 초기화 (global 변수)
+
+obj = {
+	num: 1,
+	name: 'Rex',
+	boo: true,
+	obj: obj,
+	fun: function () { alert(this.name+'님이 오셨습니다.'); },
+	und: undefined,
+	nul: null,
+	arr: [123, '하나둘셋', function () { alert('펑션'); }, obj]
+};
+
+fun1();  //에러 없음
+//fun2();  //에러 발생!
+function fun1 () {  //결론적으로 이런식의 함수는 선언하면 안됨.
+	console.log('가장 먼저 할당되는 함수');
+}
+var fun2 = function () {
+	console.log('나중에 할당되는 함수');
+}
+
+// 1회용 함수를 만들어서 바로 사용하기 
+(function(){
+	var test="안녕하세요";
+	console.log(test);
+})();
+	
+(function(){ 
+	var aaa = 0;
+	console.log('만들자마자 한번쓰고 버리는 함수');
+})();
+//만들자마자 한번쓰고 버리는 함수
+//==> 이것은 전역변수를 사용하지 않도록 스크립트 전체를 감싸는 역할을 하는 아주 중요한 함수형식이다. ★★★
+</script>

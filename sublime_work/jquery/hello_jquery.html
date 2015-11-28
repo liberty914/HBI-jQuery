@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello_jQuery.html</title>
+</head>
+<body>
+	<div>div1</div>
+	<div class='myClass'>div2</div>
+	<div class='myClass'>div3</div>
+	<div class='myClass'>div4</div>
+	<div id='myId'>div5</div>
+</body>
+</html>
+
+<script src='js/jquery-2.1.4.js'></script> <!--제이쿼리 로딩하기-->
+<script>
+	//$().action().action2()  //함수일경우,
+	//$.action().action2()    //객체일경우,예) $.ajax()
+	//이게 jQuery의 기본형식!
+	//★함수가 끝나면 반드시 undefined 또는 다른것을 리턴한다.
+
+	document.getElementsByTagName('div');  //배열을 return 함
+	document.getElementsByTagName('div')[0];
+
+	console.log(document.getElementsByTagName('div')[0].firstChild.nodeValue);
+	console.log($('div').first().text());
+	//완전히 동일한 두 명령어. "적게쓰고 많은 기능"
+
+	$('div');
+	$('.myClass');
+	$('#myId');  //CSS 의 기본선택자와 똑같다.
+	$('div').css('color', 'red');
+	$('div').css('color', 'red').css('background-color', '#cecece');
+	$('div').css('color', 'red').css('background-color', '#cecece').css('border', '1px solid black').first().css('color', 'orange').text('하하하하하');
+	//이런식으로 계속해서 진행해 나갈수 있다.
+
+	$('div').first().text()
+
+	var arr1 = document.getElementsByTagName('div');
+	var arr2 = $('div');  //단순한 array를 리턴하는게 아니라, jquery의 기능이 내장된 array를 리턴한다.
+	console.log(arr1);
+	console.log(arr2);
+	//arr1.css  ==> jQuery기능 없음 (단순 배열임)
+	//arr2.css  ==> jQuery기능 내장되어있다. (계속 동일한 객체가 리턴된다.)
+</script>

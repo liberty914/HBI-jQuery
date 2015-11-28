@@ -1,0 +1,31 @@
+﻿http://study.kimgura.net
+
+1. QR 코드 생성하는 제이쿼리 플러그인
+https://larsjung.de/jquery-qrcode/
+==> QR 코드를 원하는 형태로 생성가능하다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

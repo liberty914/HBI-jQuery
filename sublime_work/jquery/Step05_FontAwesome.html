@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FontAwesome</title>
+</head>
+<body>
+	<a href='javascript:'>눌러보셈</a>
+	<!--a태그가 어떤 동작도 하지않도록 하는방법, #도 안붙고 새로고침도 안됨!-->
+	<br/>
+	<a href='#'><span class='fa fa-download'></span><span class='sr-only'>다운로드</span></a>
+	<br/>
+	<a href="#"><span class='fa fa-ellipsis-v'></span></a>
+	<!-- 공백이 있으면 밑줄같은게 생김. 없애주자 -->
+	<br/>
+	<div class='box'></div>
+</body>
+</html>
+
+<link rel='stylesheet' href='css/font-awesome.css' />
+<style>
+a .fa-download, .fa-ellipsis-v { 
+	color: #000000; 
+	text-decoration: none; 
+	font-size: 50px; 
+}
+a .fa-download:hover, .fa-ellipsis-v:hover { 
+	color: #cecece; 
+}
+.box {
+	width: 100px;
+	height: 100px;
+	display: none;
+	background-color: #00ff00;
+}
+.sr-only {  /* 스크린 리더기에서만 보일 수 있도록 하는 css */
+  position: absolute;  /*절대좌표로*/
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; /*화면에서 안보이게만들어버림!*/
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+$('a .fa-download').click(function() {
+	console.log(confirm('download 할까요?'));
+	return false;  //엘리먼트의 기본 이벤트 제거하기
+});
+$('a .fa-ellipsis-v').click(function() {
+	$('.box').slideToggle();
+});
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>HttpTest.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script src="js/angular.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",[]);
+	myApp.controller("one",["$scope","$http",function($scope,$http){
+		//모델 
+		$scope.formData={};
+		$scope.response="";
+		//폼 전송 이벤트가 발생했을때 호출되는 함수 
+		$scope.send=function(){
+			$http({
+				url:"/httpTest",
+				method:"post",
+				data:$scope.formData
+			})
+			.success(function(data){
+				//data 는 object 이다 
+				console.log(data);
+				$scope.response=data.response;
+			})
+			.error(function(data){
+				console.log(data);
+			});
+		};
+	}]);
+	</script>	
+</head>
+<body ng-controller="one">
+<h3>$http 서비스 테스트</h3>
+<form ng-submit="send()">
+	이름 <input type="text" ng-model="formData.name"/>
+	주소 <input type="text" ng-model="formData.addr"/>
+	<button type="submit">전송</button>
+</form>	
+<div>{{formData}}</div>
+<div>서버가 응답한 내용 : <span>{{response}}</span></div>
+</body>
+</html>

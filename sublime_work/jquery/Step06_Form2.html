@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form2</title>
+</head>
+<body>
+<form id='myForm' action='signup_action' method='post'>
+	<label>아이디:
+		<input type='text' name='id' />
+	</label><br/>
+	<button id='checkBtn'>중복확인</button><br/>
+	<label>비밀번호<input type='text' name='pwd' /></label><br/>
+	<label>비밀번호 확인<input type='text' name='pwd2' /></label><br/>
+	<label>남 <input type='radio' name='gender' value='man' /></label>
+	<label>여 <input type='radio' name='gender' value='woman' /></label><br/>
+	<label>이메일주소 <input type='text' name='email' /><br/></label>
+	<label>이메일주소2 <input type='text' name='email2' /><br/></label>
+	<label>하고싶은 말</br>
+		<textarea name='etc' cols='30' rows='10'></textarea>
+	</label>
+	<button type='submit'>회원가입</button>
+</form>
+
+</body>
+</html>
+
+<script src='js/jquery-2.1.4.js'></script>
+<script>
+var isCheckedId = false;
+$('#checkBtn').click(function() {
+	//1. 입력한 아이디를 읽어와서
+	//2. ajax를 이용해서 서버에 보내고 응답을 받는다.
+	var inputId = $('input[name=id]').val();
+	//input속성이면서 name어트리뷰트가 id인것을 불러오기
+	isCheckedId = true;
+	return false;
+});
+
+$('#myForm').submit(function() {
+	if (!isCheckedId) {
+		alert('아이디 중복 확인을 하세요!');
+		return false;  //폼 전송 막기
+	}
+
+	var pwd = $('input[name=pwd]').val();
+	var pwd2 = $('input[name=pwd2]').val();
+	if (pwd !== pwd2) {
+		alert('비밀번호를 확인하세요!');
+		$('#pwd').focus();
+		return false;
+	}
+
+	//키보드 이벤트를 이용해서 검증하기
+	$('input[name=email2]').on('keyup', function() {
+		console.log('aaa');  
+		var inputEmail = $(this).val();  //입력한 이메일 주소
+		var emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;  //이메일 유효성을 검증할 수 있는 정규표현식 객체
+		var result = emailReg.test(inputEmail);  //검증해서 결과를 boolean type으로 받기
+		if (result) {
+			$(this).css('border-color', '#00ff00');
+		} else {
+			$(this).css('border-color', '#ff0000');
+		}
+	});
+
+	//키보드 이벤트를 이용해서 검증하기 (선생님꺼)
+	$("input[name=email2]").keyup(function(){
+		var inputEmail=$(this).val();
+		//이메일 유효성을 검증할수 있는 정규표현식 객체 
+		var emailReg=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;
+		//검증해서 결과를 boolean type 으로 받기 
+		var result = emailReg.test(inputEmail);
+		if(result){
+			$(this).css("border-color","#00ff00");
+		}else{
+			$(this).css("border-color","#ff0000");
+		}
+	});
+});
+</script>
