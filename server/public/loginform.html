@@ -5,10 +5,30 @@
 	<title>loginform.html</title>
 </head>
 <body>
-	<form action='login' method='post'>
+	<form action='login' method='post' id='loginForm'>
 		<label>아이디 : <input type='text' name='id' /></label><br/>
 		<label>비밀번호 : <input type='password' name='pwd' /></label><br/>
 		<button type='submit'>전송</button>
 	</form>
+
+	<div>
+		<h3>웹 컨텐츠입니다.</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minus quisquam, maxime minima ducimus dolorem est repudiandae necessitatibus, reiciendis nihil nostrum praesentium suscipit! Placeat eligendi esse sunt itaque nihil, aperiam?</p>
+	</div>
 </body>
 </html>
+
+<script src='js/jquery-1.11.2.js'></script>
+<script>
+$('#loginForm').on('submit', function() {  //form에 submit이벤트가 발생할 때.
+	var action = $(this).attr('action');
+	var method = $(this).attr('method');  //form에 있는 정보 읽어오기
+	var data = $(this).serialize();  //클라이언트가 입력한 정보 바인딩
+
+	//ajax 를 이용해서 서버에 form 전송!
+	$.ajax({
+		
+	});
+	return false;
+});
+</script>

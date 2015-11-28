@@ -1,138 +1,15 @@
 {
 	"folder_history":
 	[
+		"/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master",
+		"/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/sublime_work",
 		"/C/Frontend11/sublime_work"
 	],
-	"last_window_id": 2,
+	"last_window_id": 4,
 	"settings":
 	{
 		"new_window_height": 674.0,
 		"new_window_settings":
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"build_system": "",
-			"command_palette":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"console":
-			{
-				"height": 0.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-			],
-			"find":
-			{
-				"height": 0.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"incremental_find":
-			{
-				"height": 0.0
-			},
-			"input":
-			{
-				"height": 0.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"replace":
-			{
-				"height": 0.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"show_minimap": true,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 150.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 1041.0
-	},
-	"windows":
-	[
 		{
 			"auto_complete":
 			{
@@ -144,73 +21,6 @@
 					]
 				]
 			},
-			"buffers":
-			[
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin02_fotorama.html",
-					"settings":
-					{
-						"buffer_size": 1194,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin03_LazyLoad.html",
-					"settings":
-					{
-						"buffer_size": 861,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic.html",
-					"settings":
-					{
-						"buffer_size": 1507,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic2.html",
-					"settings":
-					{
-						"buffer_size": 1453,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic3.html",
-					"settings":
-					{
-						"buffer_size": 3914,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic4.html",
-					"settings":
-					{
-						"buffer_size": 8607,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/AnimateCss.html",
-					"settings":
-					{
-						"buffer_size": 1392,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Frontend11/sublime_work/jquery/Plugin05_SmoothScroll.html",
-					"settings":
-					{
-						"buffer_size": 2457,
-						"line_ending": "Windows"
-					}
-				}
-			],
 			"build_system": "",
 			"command_palette":
 			{
@@ -243,6 +53,7 @@
 			},
 			"file_history":
 			[
+				"/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/sublime_work/jquery/day03.html",
 				"/C/Frontend11/sublime_work/jquery/Plugin01_imgLiquid.html",
 				"/C/Frontend11/sublime_work/jquery/Step07_DomMake.html",
 				"/C/Frontend11/sublime_work/jquery/Step06_Form2.html",
@@ -279,6 +90,208 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"qrcode(",
+					"qrcode",
+					"image-panel",
+					"lable",
+					"\"",
+					"tab"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": true,
+				"regex": false,
+				"replace_history":
+				[
+					"imagePanel",
+					"label",
+					"'"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 36.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 199.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1042.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"b",
+						"b"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/public/index.html",
+					"settings":
+					{
+						"buffer_size": 664,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/public/loginform.html",
+					"settings":
+					{
+						"buffer_size": 984,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/app.js",
+					"settings":
+					{
+						"buffer_size": 3535,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+					[
+						"pci",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: install package",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 512.0
+			},
+			"console":
+			{
+				"height": 160.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/sublime_work/jquery/day03.html",
+				"/C/Frontend11/sublime_work/jquery/Plugin01_imgLiquid.html",
+				"/C/Frontend11/sublime_work/jquery/Step07_DomMake.html",
+				"/C/Frontend11/sublime_work/jquery/Step06_Form2.html",
+				"/C/Frontend11/sublime_work/jquery/Step06_Form.html",
+				"/C/Frontend11/sublime_work/jquery/Step05_FontAwesome.html",
+				"/C/Frontend11/sublime_work/jquery/Step04_Class2.html",
+				"/C/Frontend11/sublime_work/jquery/Step04_Class.html",
+				"/C/Frontend11/sublime_work/jquery/Step03_Animate.html",
+				"/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html",
+				"/C/Frontend11/sublime_work/jquery/Step01_EventHandler2.html",
+				"/C/Frontend11/sublime_work/jquery/Step01_EventHandler.html",
+				"/C/Frontend11/sublime_work/jquery/hello_jquery.html",
+				"/C/Frontend11/sublime_work/jquery/Step02_ShowHide.html.html",
+				"/C/Frontend11/sublime_work/jquery/js/Step01_EventHandler.html",
+				"/C/Frontend11/sublime_work/javascript/hello.html",
+				"/C/Frontend11/sublime_work/javascript/Step01_DataType.html",
+				"/C/Frontend11/sublime_work/javascript/Step02_function.html",
+				"/C/Frontend11/sublime/Data/Packages/User/Package Control.sublime-settings",
+				"/C/Frontend11/sublime/Data/Packages/Package Control/Package Control.sublime-settings"
+			],
+			"find":
+			{
+				"height": 36.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"qrcode(",
+					"qrcode",
 					"image-panel",
 					"lable",
 					"\"",
@@ -303,55 +316,82 @@
 			"folders":
 			[
 				{
-					"path": "/C/Frontend11/sublime_work"
+					"path": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 7,
+					"selected": 2,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin02_fotorama.html",
 							"settings":
 							{
-								"buffer_size": 1194,
+								"buffer_size": 0,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										409,
-										409
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"default_dir": "C:\\Users\\user\\Desktop\\HBI-jQuery-master\\HBI-jQuery-master\\server\\public",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 114.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin03_LazyLoad.html",
+							"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/public/index.html",
 							"settings":
 							{
-								"buffer_size": 861,
+								"buffer_size": 664,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										861,
-										861
+										179,
+										179
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 38.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/public/loginform.html",
+							"settings":
+							{
+								"buffer_size": 984,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										984,
+										984
 									]
 								],
 								"settings":
@@ -365,158 +405,29 @@
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic.html",
-							"settings":
-							{
-								"buffer_size": 1507,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1077,
-										1077
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 627.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
 							"buffer": 3,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic2.html",
+							"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/app.js",
 							"settings":
 							{
-								"buffer_size": 1453,
+								"buffer_size": 3535,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1453,
-										955
+										1326,
+										1326
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1197.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic3.html",
-							"settings":
-							{
-								"buffer_size": 3914,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1776,
-										1776
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 426.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 5,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin04_ScrollMagic4.html",
-							"settings":
-							{
-								"buffer_size": 8607,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										8007,
-										8007
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 2459.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 6,
-							"file": "/C/Frontend11/sublime_work/jquery/AnimateCss.html",
-							"settings":
-							{
-								"buffer_size": 1392,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1222,
-										1222
-									]
-								],
-								"settings":
-								{
-									"auto_name": "",
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 513.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 7,
-							"file": "/C/Frontend11/sublime_work/jquery/Plugin05_SmoothScroll.html",
-							"settings":
-							{
-								"buffer_size": 2457,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										101,
-										101
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 570.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -555,7 +466,7 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "0,0,1,-1,-1,-1,-1,732,187,0,1245",
+			"position": "0,0,1,-32000,-32000,-1,-1,732,104,0,1163",
 			"replace":
 			{
 				"height": 64.0
@@ -583,7 +494,7 @@
 			"side_bar_visible": true,
 			"side_bar_width": 199.0,
 			"status_bar_visible": true,
-			"window_id": 2,
+			"window_id": 4,
 			"workspace_name": ""
 		}
 	],
