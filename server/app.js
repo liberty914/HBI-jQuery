@@ -1,5 +1,6 @@
 
 //서버단 프로그래밍은 app.js에서 한다.
+//★ app.js를 한번 수정하면 반드시 서버를 껐다가 켜야한다!
 
 
 var express = require('express');
@@ -38,7 +39,11 @@ app.use('/users', users);
 app.post('/login', function(req, res) {
   var id = req.body.id;
   var pwd = req.body.pwd;  //전송된 아이디 비밀번호 읽어오기
-  
+  //html의 form에 있는 name 어트리뷰트가 상당히 중요하다! 딱 맞아야됨.
+  //JAVA에서 .getParameter('id'); 와 완전히 동일
+
+  //DB쪽으로 domain객체를 service Layer, persistance Layer 로 넘기고 DB SQL을 날려야한다.
+
   console.log(id+'/'+pwd);  //서버측 콘솔창에 출력해보기
   res.end('ok!');  //웹 브라우저에 문자열 응답하기
 });

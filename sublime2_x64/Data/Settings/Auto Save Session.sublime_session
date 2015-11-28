@@ -216,7 +216,7 @@
 					"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/app.js",
 					"settings":
 					{
-						"buffer_size": 3334,
+						"buffer_size": 3535,
 						"line_ending": "Unix"
 					}
 				}
@@ -409,15 +409,15 @@
 							"file": "/C/Users/user/Desktop/HBI-jQuery-master/HBI-jQuery-master/server/app.js",
 							"settings":
 							{
-								"buffer_size": 3334,
+								"buffer_size": 3535,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1037,
-										1037
+										1136,
+										1136
 									]
 								],
 								"settings":
@@ -427,7 +427,7 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 513.0,
+								"translation.y": 570.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
