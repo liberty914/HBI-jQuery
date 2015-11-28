@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>RouterTest2.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<style>
+	.table-hover tbody tr:hover{
+		cursor: pointer;
+	}
+	</style>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",["ngRoute"]);
+
+	//router 설정
+	myApp.config(function($routeProvider){
+		$routeProvider
+		.when("/home",{templateUrl:"views2/home.html"})
+		.when("/game",{templateUrl:"views2/game.html"})
+		.when("/contacts",{
+			templateUrl:"views2/contacts.html",
+			controller:"contactsCtrl"
+		})
+		.when("/user/:userId",{
+			templateUrl:"views2/user_detail.html",
+			controller:"userDetailCtrl"
+		})
+		.otherwise({redirectTo:"/home"});
+	});
+
+	myApp.controller("navCtrl",["$scope",function($scope){
+		$scope.activeMenu="home";
+		$scope.setActive=function(menu){
+			$scope.activeMenu=menu;
+		}
+	}]);
+	//연락처 정보를 출력하고 컨트롤할 컨트롤러 
+	myApp.controller("contactsCtrl",["$scope","$http","$location", function($scope, $http, $location){
+		console.log("contactsCtrl!");
+		//서버에 데이터를 요청한다. 
+		$http({
+			url:"/userList",
+			method:"GET"
+		})
+		.success(function(data){
+			//서버에서 응답된 정보를 모델에 연결한다. 
+			$scope.userList=data;
+		});
+		// table row 를 클릭했을때 실행되는 함수 등록 
+		$scope.goDetail=function(userId){
+			//$location.url("/user/"+userId+"?test=hi");
+			$location.url("/user/"+userId);
+		};
+	}]);
+	//회원정보 자세히보기 컨트롤러 
+	myApp.controller("userDetailCtrl",["$scope","$http","$routeParams","$location", function($scope, $http, $routeParams, $location){
+		//$routeParams 를 이용해서 전달된 파라미터 추출
+		// "/user/:userId"
+		var id = $routeParams.userId;
+		//var test = $routeParams.test;
+		console.log(id);
+		//user 모델 
+		$scope.user={};
+		//$http 서비스를 이용해서 자세한 회원정보 요청 
+		var url="/getUser?userId="+id;
+		$http({
+			url:url,
+			method:"GET"
+		}).success(function(data){
+			//data => {"num":0,"name":"xxx",phone:"xx",imgSrc:"xxx"}
+			$scope.user=data;
+		});
+		//뒤로 가기 버튼을 눌렀을때 
+		$scope.goBack=function(){
+			$location.url("/contacts");
+		};
+	}]);
+
+	</script>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1>Angular js <small>Router Test</small></h1>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<ul ng-controller="navCtrl" class="nav nav-pills nav-stacked">
+				<li ng-class="{'active': activeMenu=='home' }"><a href="#home" ng-click="setActive('home')">Home</a></li>
+				<li ng-class="{'active': activeMenu=='game'}"><a href="#game" ng-click="setActive('game')">Game</a></li>
+				<li ng-class="{'active': activeMenu=='contacts'}" ng-click="setActive('contacts')"><a href="#contacts">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+			<ng-view></ng-view>
+		</div>
+	</div>
+</div>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>JsonpTest.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script src="js/angular.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",[]);
+	myApp.controller("one",["$scope","$http",function($scope,$http){
+		$scope.names=["하나","두울"];
+		$scope.getList=function(){
+			//JSON_CALLBACK => angular.js 에서 정의한 상수 
+			var url="http://localhost:3000/jsonpTest?callback=JSON_CALLBACK";
+			$http
+			.jsonp(url,{params:{}})
+			.success(function(data){
+				console.log(data);
+				$scope.names=data;
+			});
+		};
+	}]);
+	</script>
+</head>
+<body ng-controller="one">
+	<button ng-click="getList()">목록 받아오기</button>
+	<ul>
+		<li ng-repeat="tmp in names">{{tmp}}</li>
+	</ul>
+</body>
+</html>

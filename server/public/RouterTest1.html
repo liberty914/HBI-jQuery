@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>RouterTest1.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<script src="js/angular.min.js"></script>
+	<!-- 싱글 페이지 라우터에 관련된 javascript 로딩 -->
+	<script src="js/angular-route.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",["ngRoute"]);
+
+	myApp.config(function($routeProvider){
+		$routeProvider
+		.when("/home",{templateUrl:"views/home.html"})
+		.when("/game",{templateUrl:"views/game.html"})
+		.when("/contacts",{
+			templateUrl:"views/contacts.html",
+			controller:"contactsCtrl"
+		})
+		.otherwise({redirectTo:"/home"});
+	});
+
+	myApp.controller("contactsCtrl",["$scope", function($scope){
+		$scope.userList=[{
+			name:"김구라",
+			phone:"010"
+		},{
+			name:"해골",
+			phone:"017"
+		},{
+			name:"원숭이",
+			phone:"018"
+		}];
+	}]);
+
+	</script>	
+</head>
+<body>
+<h3>Router 테스트</h3>
+<ul>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#game">Game</a></li>
+	<li><a href="#contacts">Contacts</a></li>
+	<li><a href="#etc">etc...</a></li>
+</ul>	
+<ng-view></ng-view>
+</body>
+</html>
