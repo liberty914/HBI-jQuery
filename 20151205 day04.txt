@@ -100,6 +100,23 @@ http://imsky.github.io/holder/
 =================================
 
 
+Opt-in function (퍼포먼스 이유로)
+.tooltip()
+.popover()
+
+
+Modal
+Dropdown
+Tab
+Tooltip
+Popover
+Alert
+Button
+Collapse
+Carousel 는 쉽다.
+
+Affix
+ScrollSpy 는 조금 어려움.
 
 
 

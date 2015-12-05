@@ -305,34 +305,10 @@
 			"buffers":
 			[
 				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_NavbarPosition.html",
+					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Tweet.html",
 					"settings":
 					{
-						"buffer_size": 859,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_ResponsiveNavbar.html",
-					"settings":
-					{
-						"buffer_size": 1727,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Dropdown.html",
-					"settings":
-					{
-						"buffer_size": 4046,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/test.html",
-					"settings":
-					{
-						"buffer_size": 166,
+						"buffer_size": 3791,
 						"line_ending": "Windows"
 					}
 				}
@@ -377,6 +353,15 @@
 			},
 			"file_history":
 			[
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Thumbnail.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/test.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Dropdown.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Progressbar.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Panel.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_ListGroup.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_InputGroup.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_ResponsiveNavbar.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_NavbarPosition.html",
 				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_HelperClass.html",
 				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Typography.html",
 				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Image.html",
@@ -486,110 +471,29 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_NavbarPosition.html",
+							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Tweet.html",
 							"settings":
 							{
-								"buffer_size": 859,
+								"buffer_size": 3791,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										509,
-										509
+										40,
+										40
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/HTML/HTML.tmLanguage",
 									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_ResponsiveNavbar.html",
-							"settings":
-							{
-								"buffer_size": 1727,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1667,
-										1667
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 270.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Dropdown.html",
-							"settings":
-							{
-								"buffer_size": 4046,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										608,
-										608
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 135.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/test.html",
-							"settings":
-							{
-								"buffer_size": 166,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										155,
-										155
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
