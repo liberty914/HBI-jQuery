@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_Button.html</title>
+	<link rel="stylesheet" href="css/bootstrap-3.3.6.css"/>
+</head>
+<body>
+	<div class="container">
+		<h3>색상별 버튼</h3>
+		<div>
+			<button class="btn btn-default">default</button>
+			<button class="btn btn-primary">primary</button>
+			<button class="btn btn-success">success</button>
+			<button class="btn btn-info">info</button>
+			<button class="btn btn-warning">warning</button>
+			<button class="btn btn-danger">danger</button>
+		</div>
+		<h3>크기별 버튼</h3>
+		<div>
+			<button class="btn btn-primary btn-xs">btn-xs</button>
+			<button class="btn btn-primary btn-sm">btn-sm</button>
+			<button class="btn btn-primary">default</button>
+			<button class="btn btn-primary btn-lg">btn-lg</button>
+		</div>
+		<h3>블록 레벨 버튼 (column으로 나누고, 해당컬럼의 width를 100%채움)
+			<br/>gtid gutter width: 30px이 디폴트로 들어옴</h3>
+		<div class="row">
+			<div class="col-xs-6">
+				<button class="btn btn-info btn-block">블록레벨</button>
+			</div><!---->
+			<div class="col-xs-6">
+				<button class="btn btn-warning btn-block">블록레벨</button>
+			</div>
+		</div>
+		<h3>활성화된 버튼(Active State)</h3>
+		<div>
+			<button class="btn btn-success">비활성</button>
+			<button class="btn btn-success active">active</button>
+		</div>
+		<div>
+			<button class="btn btn-primary">비활성</button>
+			<button class="btn btn-primary active">active</button>
+		</div>
+		<h3>Anchor 요소를 버튼 스타일로 만들기</h3>
+		<div>
+			<a href="#" class="btn btn-warning">Link1</a>
+			<a href="#" class="btn btn-default">Link2</a>
+		</div>
+		<h3>Disabled 된 button 요소</h3>
+		<div>
+			<button class="btn btn-default" disabled="disabled">disabled</button>
+			<button class="btn btn-primary" disabled="disabled">disabled</button>
+		</div>		
+		<h3>Disabled 된 Anchor 요소 </h3>
+		<div>
+			<a href="javascript:" class="btn btn-warning disabled">Link1</a>
+			<a href="javascript:" class="btn btn-default disabled">Link2</a>
+		</div>
+		<h3>input 요소에 적용하기</h3>
+		<form action="">
+			<input class="btn btn-success" type="submit" value="확인"/>
+			<input class="btn btn-danger" type="reset" value="취소"/>
+			<input class="btn btn-primary" type="button" value="액션"/>
+		</form>
+	</div>
+</body>
+</html>

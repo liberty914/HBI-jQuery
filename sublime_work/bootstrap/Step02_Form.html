@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Step02_Form.html</title>
+  <link rel="stylesheet" href="css/bootstrap-3.3.6.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h3>Basic Form</h3>
+    <form action="">
+      <div class="form-group">
+        <label for="email_1">Email 주소</label>
+        <input class="form-control" type="text" id="email_1" name="email" placeholder="이메일 주소 입력" />
+      </div>
+      <div class="form-group">
+        <label for="pwd_1">비밀번호</label>
+        <input class="form-control" type="password" id="pwd_1" name="pwd" placeholder="비밀번호 입력" />
+      </div>
+      <div class="form-group">
+        <label for="file">첨부파일</label>
+        <input class="form-control" type="file" id="file" name="file" />
+        <p class="help-block">크기가 10Mbyte 이하의 파일 선택</p>
+        <!--form의 피드백이나 설명-->
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" />아이디 비밀번호 저장
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">전송</button>
+      <button type="reset" class="btn btn-warning">취소</button>
+    </form>
+
+    <h3>inline form (class="form-inline")</h3>
+    <form class="form-inline" action="">  <!--sm영역이상에서 한줄에 나타남-->
+      <div class="form-group">
+        <label for="id">아이디</label>
+        <input type="text" id="id" class="form-control" placeholder="아이디 입력" />
+      </div>
+      <div class="form-group">
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" class="form-control" placeholder="비밀번호 입력" />
+      </div>
+      <button type="submit" class="btn btn-primary">로그인</button>
+    </form>
+
+    <h3>horizontal form ( 수평 정렬 폼) (class="form-horizontal")</h3>
+    <form class="form-horizontal" action="">
+      <div class="form-group">
+        <label for="email_2" class="col-xs-3 control-label">이메일</label>
+        <div class="col-xs-9">
+          <input type="text" class="form-control" id="email_2" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pwd_2" class="col-xs-3 control-label">비밀번호</label>
+        <div class="col-xs-9">
+          <input type="password" class="form-control" id="pwd_2" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+          <label>
+            <input type="checkbox" />이메일 저장
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+          <button type="submit" class="btn btn-primary">로그인</button>
+          <button type="reset" class="btn btn-warning">취소</button>
+        </div>
+      </div>
+    </form>
+    <h3>textarea</h3>
+    <textarea name="etc" class="form-control" rows="10"></textarea>
+    <h3>반응형 textarea width (xs에서 그리드12)</h3>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <textarea name="etc" class="form-control" rows="10"></textarea>
+      </div>
+    </div>
+
+    <h3>block 되는 checkbox 와 radio  ==> 그냥 div로 만듦</h3>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">체크박스
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">체크박스
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">체크박스
+      </label>
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="gender" />남성
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="gender" />여성
+      </label>
+    </div>
+
+    <h3>inline 되는 checkbox, radio (레이블태그에 class="checkbox-inline")</h3>
+    <label class="checkbox-inline">
+      <input type="checkbox" />하나
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" />두울
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" />세엣
+    </label>
+    <hr/>
+    <label class="radio-inline">
+      <input type="radio" name="gender" checked="checked" />남성
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gender" />여성
+    </label>
+
+    <h3>select</h3>
+    <select name="size" class="form-control">
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+    </select>
+    <h3>multiple select</h3>
+    <select name="items" class="form-control" multiple>
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+      <option value="four">4</option>
+      <option value="five">5</option>
+    </select>
+    <h3>Form validation 상태 표시하기</h3>
+    <form action="">
+      <div class="form-group has-success">
+        <label for="email">Email 주소</label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="이메일 주소 입력" />
+      </div>
+      <div class="form-group has-warning">
+        <label for="pwd">비밀번호</label>
+        <input class="form-control" type="password" id="pwd" name="pwd" placeholder="비밀번호 입력" />
+      </div>
+      <div class="form-group has-error">
+        <label for="file">첨부파일</label>
+        <input class="form-control" type="file" id="file" name="file" />
+        <p class="help-block">크기가 10Mbyte 이하의 파일 선택</p>
+      </div>
+      <div class="has-warning">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" />아이디 비밀번호 저장
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-envelope"></span>전송
+      </button>
+      <button type="reset" class="btn btn-warning">
+        <span class="glyphicon glyphicon-remove"></span>취소
+      </button>
+    </form>
+
+    <h3>Form validation 상태 feedback 표시하기</h3>
+    <form action="">
+      <div class="form-group has-success has-feedback">
+        <label for="email">Email 주소</label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="이메일 주소 입력" />
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+      </div>
+      <div class="form-group has-warning has-feedback">
+        <label for="pwd">비밀번호</label>
+        <input class="form-control" type="password" id="pwd" name="pwd" placeholder="비밀번호 입력" />
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+      </div>
+      <div class="form-group has-error has-feedback">
+        <label for="file">첨부파일</label>
+        <input class="form-control" type="file" id="file" name="file" />
+        <p class="help-block">크기가 10Mbyte 이하의 파일 선택</p>
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+      </div>
+      <div class="has-warning">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" />아이디 비밀번호 저장
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-envelope"></span>전송
+      </button>
+      <button type="reset" class="btn btn-warning">
+        <span class="glyphicon glyphicon-remove"></span>취소
+      </button>
+    </form>
+    <h3>control size</h3>
+    <input type="text" class="form-control input-sm" placeholder="input-sm" />
+    <input type="text" class="form-control" placeholder="default" />
+    <input type="text" class="form-control input-lg" placeholder="input-lg" />
+
+    <h3>수평 form 에서의 control size</h3>
+    <form class="form-horizontal">
+      <div class="form-group form-group-sm">
+        <label for="id" class="col-xs-3 control-label">아이디</label>
+        <div class="col-xs-9">
+          <input type="text" id="id" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id2" class="col-xs-3 control-label">아이디</label>
+        <div class="col-xs-9">
+          <input type="text" id="id2" class="form-control" />
+        </div>
+      </div>
+      <div class="form-group form-group-lg">
+        <label for="id3" class="col-xs-3 control-label">아이디</label>
+        <div class="col-xs-9">
+          <input type="text" id="id3" class="form-control" />
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <!--/ .container -->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Step03_Badge.html</title>
+    <link href="css/bootstrap-3.3.6.css" rel="stylesheet" />
+    <!-- IE 8 을 위한 fix -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap-3.3.6.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#">Messenger <span class="badge">10</span></a></li>
+        </ul>
+        <div class="row">
+            <div class="col-xs-4">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile 
+                      <span class="badge pull-right">New</span></a>
+                    </li>
+                    <li class="active"><a href="#">Messenger <span class="badge pull-right">8</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

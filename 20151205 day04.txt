@@ -1,3 +1,9 @@
+http://study.kimgura.net/
+
+Step01  ==>  http://getbootstrap.com/css/#grid
+Step02  ==>  http://getbootstrap.com/css/
+Step03  ==>  http://getbootstrap.com/components/
+
 bootStrap 3.3.6
 
 =============================================
@@ -44,21 +50,38 @@ table
 table-borderd
 table-hover
 
+Form 태그 내부의 validation상태 표시하기.
+.has-success
+.has-warning
+.has-errorh
+.help-block
+
+form-group has-success has-feedback
+<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+.sr-only  ==>  웹표준을 준수하기 위해, 화면에 보이지는 않지만 스크린리더기가 읽을수 있도록 textNode를 작성하도록 함.
 
 
+table은 기본적으로 width 100%이며,
+조정을 위해서는 colume을 나누면 된다.
+
+img-responsive
+==> max-width: 100%;
+
+data-toggle 어트리뷰트
+==> data- 어트리뷰트는 bootstrap.js와의 연결고리이며,
+    js에서 active속성을 부여함.
+=========================================================
 
 
+https://bootswatch.com/
+==> 부트스트랩 무료테마 (다운받아서 그냥 bootstrap.css 파일만 교체하면 된다.)
 
 
-
-
-
-
-
-
-
-
-
+http://imsky.github.io/holder/
+==> 이미지 플레이스홀더
+가로 100%, 세로 200px 로 하고싶으면
+<img src="holder.js/100px200/sky"/>
 
 
 
