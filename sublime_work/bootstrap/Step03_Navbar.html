@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step03_Navbar.html</title>
+	<link rel="stylesheet" href="css/bootstrap-3.3.6.css"/>
+</head>
+<body>
+<h3>default navbar</h3>
+<div class="navbar navbar-default">
+	<a href="#" class="navbar-brand">Brand</a>
+</div>
+<h3>inverse navbar</h3>
+<div class="navbar navbar-inverse">
+	<a href="#" class="navbar-brand">Brand</a>
+</div>
+<div class="container">
+	<h3>container 안에 위치한 navbar</h3>
+	<div class="navbar navbar-inverse">
+		<a href="#" class="navbar-brand">Brand</a>
+	</div>
+</div>
+<h3>navbar 안의 컨텐츠만 container 에 위치하게 하기</h3>
+<div class="navbar navbar-inverse">
+	<div class="container">
+		<a href="#" class="navbar-brand">Brand</a>
+	</div>
+</div>
+<h3>navbar 안에 버튼 배치</h3>
+<div class="navbar navbar-inverse">
+	<button class="btn navbar-btn btn-warning pull-right">Sign in</button>
+	<button class="btn navbar-btn btn-primary btn-xs">Sign in</button>
+	<button class="btn navbar-btn btn-info btn-xs">Sign in</button>
+	<!--navbar-btn 은 네비바 안에다가 버튼을 만들때 세로 가운데정렬을 해주는 역할을 한다 -->
+</div>
+<h3>navbar 안에 text 출력</h3>
+<div class="navbar navbar-inverse">
+	<div class="container">
+		<p class="navbar-text">Made in Kimgura</p>
+	</div>
+</div>
+<h3>navbar 안에 anchor</h3>
+<div class="navbar navbar-inverse">
+	<div class="container">
+		<a class="navbar-link navbar-text pull-right" href="#">Contact us</a>
+		<!--navbar-link, navbar-text 클래스를 필수적으로 넣어주는게 좋다.-->
+	</div>
+</div>
+<h3>navbar 안에 form</h3>
+<div class="navbar navbar-inverse">
+	<a href="#" class="navbar-brand">Gura</a>
+	<form action="" class="navbar-form navbar-right">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="입력"/>
+			<button type="submit" class="btn btn-primary">확인</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>

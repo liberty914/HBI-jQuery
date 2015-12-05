@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step03_Pagination.html</title>
+	<link rel="stylesheet" href="css/bootstrap-3.3.6.css"/>
+</head>
+<body>
+<div class="container">
+	<h3>page 처리에 관련된 UI</h3>
+	<ul class="pagination" id="myPager">
+		<li><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li class="active"><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<h3>disabled style</h3>
+	<ul class="pagination">
+		<li class="disabled"><a href="javascript:">&laquo;</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<h3>pagination Size</h3>
+	<ul class="pagination pagination-lg">
+		<li class="disabled"><a href="#">&laquo;</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+	<ul class="pagination">
+		<li class="disabled"><a href="#">&laquo;</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+	<ul class="pagination pagination-sm">
+		<li class="disabled"><a href="#">&laquo;</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<h3>가운데 정렬된 Pager style</h3>
+	<ul class="pager">
+		<li><a href="#">이전</a></li>
+		<li><a href="#">다음</a></li>
+	</ul>
+	<h3>양쪽 정렬된 Pager style</h3>
+	<ul class="pager">
+		<li class="previous"><a href="#">&larr; 이전</a></li>
+		<li class="next"><a href="#">다음 &rarr;</a></li>
+	</ul>
+	<h3>disabled Pager style</h3>
+	<ul class="pager">
+		<li class="previous"><a href="#">&larr; 이전</a></li>
+		<li class="next disabled"><a href="javascript:">다음 &rarr;</a></li>
+	</ul>
+</div>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+	$(".pagination a").click(function(){
+		$(this)
+		.parent()
+		.addClass("active")
+		.siblings()  //형제요소들을 return하는 메소드
+		.removeClass("active");
+	});
+</script>
+</body>
+</html>

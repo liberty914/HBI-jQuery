@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Step03_Dropdown.html</title>
+    <link rel="stylesheet" href="css/bootstrap-3.3.6.css" />
+    <!-- jquery 로딩하기 -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!-- jquery plugin javascript 로딩하기 -->
+    <script src="js/bootstrap-3.3.6.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>dropdown 버튼</h3>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                메뉴선택
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">하나</a></li>
+                <li><a href="#">두울</a></li>
+                <li><a href="#">세엣</a></li>
+            </ul>
+        </div>
+        <h3>dropdown 버튼2</h3>
+        <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                점심메뉴 선택
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">한식</li>
+                <li><a href="#">비빔밥</a></li>
+                <li><a href="#">된장찌게</a></li>
+                <li><a href="#">김치찌게</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">중식</li>
+                <li><a href="#">짜장면</a></li>
+                <li><a href="#">짬뽕</a></li>
+                <li><a href="#">탕수육</a></li>
+            </ul>
+        </div>
+        <h3>input Group 에 dropdown 버튼 합치기</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a>
+                            </li>
+                            <li><a href="#">Another action</a>
+                            </li>
+                            <li><a href="#">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /btn-group -->
+                    <input type="text" class="form-control">
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Action</a>
+                            </li>
+                            <li><a href="#">Another action</a>
+                            </li>
+                            <li><a href="#">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /btn-group -->
+                </div>
+                <!-- /input-group -->
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <div class='box'></div>
+</body>
+
+</html>
+
+<style>
+.box {
+    width: 100px;
+    height: 100px;
+    border-width: 50px;
+    background-color: black;
+    border-top-color: blue;
+
+}
+</style>

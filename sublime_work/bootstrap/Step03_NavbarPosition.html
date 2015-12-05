@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step03_NavbarPosition.html</title>
+	<link rel="stylesheet" href="css/bootstrap-3.3.6.css"/>
+	<style>
+	.spacer{
+		height: 1000px;
+		background-color: #cecece;
+	}
+	body{
+		padding-top: 60px;  /* 네비바 떄문에 컨텐츠가 안보이는 문제를 해결 */
+	}
+
+	@media (max-width: 767px){  /* (모바일경우)하단 네비바 때문에 컨텐츠가 안보이는 문제를 해결 */
+		body{
+			padding-bottom: 60px;
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<a href="#" class="navbar-brand">fixed-top</a>
+	</div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom visible-xs-block">  <!--visible-xs-block-->
+	<div class="container">
+		<a href="#" class="navbar-brand">fixed-bottom</a>
+	</div>
+</div>
+<div class="container">
+	<h1>컨텐츠 입니다.</h1>
+	<div class="spacer"></div>
+</div>
+	
+</body>
+</html>

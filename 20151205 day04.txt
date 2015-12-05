@@ -71,6 +71,15 @@ img-responsive
 data-toggle 어트리뷰트
 ==> data- 어트리뷰트는 bootstrap.js와의 연결고리이며,
     js에서 active속성을 부여함.
+
+==========================================================
+
+드롭다운
+<div class='dropdown'>
+	<button class='dropdown-toggle' data-toggle='dropdown'>메뉴선택</button>
+	<ul><li></li></ul>
+</div>
+
 =========================================================
 
 
@@ -84,6 +93,11 @@ http://imsky.github.io/holder/
 <img src="holder.js/100px200/sky"/>
 
 
+서브라임에서 pci --> Bootstrap 3 Snippet 설치https://github.com/JasonMortonNZ/bs3-sublime-plugin
+==>  bs3-navbar  하고 Tab을 하면 자동으로 네비게이션바를 쫙만들어줌!
+
+
+=================================
 
 
 

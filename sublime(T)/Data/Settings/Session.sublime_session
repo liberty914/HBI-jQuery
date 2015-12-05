@@ -305,52 +305,48 @@
 			"buffers":
 			[
 				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/hello.html",
+					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_NavbarPosition.html",
 					"settings":
 					{
-						"buffer_size": 1193,
+						"buffer_size": 859,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem.html",
+					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_ResponsiveNavbar.html",
 					"settings":
 					{
-						"buffer_size": 3223,
+						"buffer_size": 1727,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem2.html",
+					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Dropdown.html",
 					"settings":
 					{
-						"buffer_size": 2513,
+						"buffer_size": 4046,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step02_ResponsiveUtil.html",
+					"file": "/C/HBI-jQuery/sublime_work/bootstrap/test.html",
 					"settings":
 					{
-						"buffer_size": 1018,
+						"buffer_size": 166,
 						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/HBI-jQuery/sublime_work/bootstrap/css/bootstrap-3.3.6.css",
-					"settings":
-					{
-						"buffer_size": 146082,
-						"line_ending": "Unix"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 150.0,
+				"height": 392.0,
 				"selected_items":
 				[
+					[
+						"pci",
+						"Package Control: Install Package"
+					],
 					[
 						"Package Control: in",
 						"Package Control: Install Package"
@@ -381,6 +377,26 @@
 			},
 			"file_history":
 			[
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_HelperClass.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Typography.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Image.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Navbar.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Pagination.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_NaviElement2.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_NaviElement.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Label.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Breadcrumb.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Badge.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step03_Alert.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Table.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Form.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_Button.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step02_ResponsiveUtil.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem2.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem.html",
+				"/C/HBI-jQuery/sublime_work/bootstrap/hello.html",
+				"/C/HBI-jQuery/sublime(T)/Data/Packages/User/Preferences.sublime-settings",
+				"/C/HBI-jQuery/sublime_work/bootstrap/css/bootstrap-3.3.6.css",
 				"/C/HBI-jQuery/sublime(T)/Data/Packages/Default/Preferences.sublime-settings",
 				"/C/Frontend11/sublime_work/angular/Step06_Controller2.html",
 				"/C/Frontend11/sublime_work/angular/Step06_Controller.html",
@@ -443,6 +459,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"navbar-ex1-collapse",
+					"myPager",
+					"scroll",
 					"auto"
 				],
 				"highlight": true,
@@ -467,28 +486,29 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/hello.html",
+							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_NavbarPosition.html",
 							"settings":
 							{
-								"buffer_size": 1193,
+								"buffer_size": 859,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										93,
-										93
+										509,
+										509
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -498,70 +518,73 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem.html",
+							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_ResponsiveNavbar.html",
 							"settings":
 							{
-								"buffer_size": 3223,
+								"buffer_size": 1727,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2841,
-										2841
+										1667,
+										1667
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 1305.0,
+								"translation.y": 270.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 2,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step01_GridSystem2.html",
+							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step03_Dropdown.html",
 							"settings":
 							{
-								"buffer_size": 2513,
+								"buffer_size": 4046,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2085,
-										2085
+										608,
+										608
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/HTML/HTML.tmLanguage"
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 900.0,
+								"translation.y": 135.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 3,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/Step02_ResponsiveUtil.html",
+							"file": "/C/HBI-jQuery/sublime_work/bootstrap/test.html",
 							"settings":
 							{
-								"buffer_size": 1018,
+								"buffer_size": 166,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										146,
-										146
+										155,
+										155
 									]
 								],
 								"settings":
@@ -570,34 +593,6 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"file": "/C/HBI-jQuery/sublime_work/bootstrap/css/bootstrap-3.3.6.css",
-							"settings":
-							{
-								"buffer_size": 146082,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										29300,
-										29300
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/CSS/CSS.tmLanguage",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 26277.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
