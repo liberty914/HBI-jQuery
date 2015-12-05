@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_Controller.html</title>
+	<script src="js/angular.min.js"></script>
+	<script>
+	//"myApp" 라는 이름의 모듈 만들기 
+	var myApp=angular.module("myApp",[]);
+	//"MyCtrl" 이라는 이름의 컨트롤러 만들기 
+	myApp.controller("MyCtrl",function($scope){
+		$scope.name="김구라";
+		$scope.nums=[10,20,30,40,50];
+		$scope.push=function(){
+			alert("버튼을 눌렀네여?");
+		};
+	});
+	myApp.controller("MyCtrl2",function($scope){
+		$scope.name="해골";
+		$scope.names=["하나","두울","세엣"];
+		$scope.count=0;
+		$scope.push=function(){
+			$scope.count++;
+			$scope.names.push($scope.count);
+		};
+	});
+	</script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<p>내이름은 {{name}}</p>
+		<ul>
+			<li ng-repeat="tmp in nums">{{tmp}}</li>
+		</ul>
+		<button ng-click="push()">눌러보셈</button>
+	</div>
+	<div ng-controller="MyCtrl2">
+		<p>너의 이름은 {{name}}</p>
+		<ul>
+			<li ng-repeat="tmp in names">{{tmp}}</li>
+		</ul>
+		<button ng-click="push()">눌러보셈</button><br/>
+		<p>버튼을 {{count}} 번 눌렀네?</p>
+	</div>
+</body>
+</html>

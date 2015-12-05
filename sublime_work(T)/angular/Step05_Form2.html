@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_Form2.html</title>
+	<style>
+	input{
+		border:1px solid #000000;
+	}
+	.red{
+		border-color: red;
+	}
+	.green{
+		border-color: #00ff00;
+	}
+	</style>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+<form action="signup" name="myForm" novalidate>
+	아이디 <input type="text" name="id" 
+		ng-required="true" 
+		ng-model="id"
+		ng-class="{'red':myForm.id.$dirty && myForm.id.$invalid, 'green':myForm.id.$valid }"
+		ng-minlength="5"
+		ng-maxlength="10"/>
+	<p ng-show="myForm.id.$dirty && myForm.id.$error.required">반드시 입력하세요</p>
+	<p ng-show="myForm.id.$dirty && myForm.id.$error.minlength">5글자 이상 입력하세요</p>
+	<p ng-show="myForm.id.$dirty && myForm.id.$error.maxlength">10글자 이하로 입력하세요</p>
+	<p></p>
+	<br/>
+	<button ng-disabled="myForm.$invalid" type="submit">가입</button>
+</form>	
+<p>myForm.id.$dirty={{myForm.id.$dirty}}</p>
+<p>myForm.id.$error.required={{myForm.id.$error.required}}</p>
+<p>myForm.id.$error.minlength={{myForm.id.$error.minlength}}</p>
+<p>myForm.id.$error.maxlength={{myForm.id.$error.maxlength}}</p>
+</body>
+</html>

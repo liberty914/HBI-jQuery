@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_Function.html</title>
+	<script>
+
+	var a=function(){
+		console.log("a() 호출");
+	};
+	var a2=function(){
+		console.log("a2() 호출");
+		return undefined;
+	};
+	var a3=function(){
+		console.log("a3() 호출");
+		return;
+	};
+
+	var getNum=function(){
+		console.log("getNum() 호출!");
+		return 999;
+	};
+
+	var getName=function(){
+		console.log("getName() 호출!");
+		return "김구라";
+	};
+
+	var getObj=function(){
+		console.log("getObj() 호출!");
+		return {num:2,name:"해골"};
+	};
+
+	var showMsg=function(msg){
+		console.log(msg);
+		console.log("함수가 리턴됩니다.");
+	};
+
+	var showSum=function(a, b){
+		var result=a + b;
+		console.log(result);
+	}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

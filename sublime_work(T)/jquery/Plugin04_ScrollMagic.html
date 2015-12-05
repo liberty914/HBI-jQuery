@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin04_ScrollMagic.html</title>
+	<style>
+		.container{
+			width:300px;
+			margin: 0 auto;
+		}
+		.spacer{
+			height: 500px;
+			background-color: #dddddd;
+		}
+		#pin{
+			background-color: #00ff00;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="spacer">spacer</div>
+		<div class="spacer">spacer</div>
+		<div id="trigger"></div>
+		<div id="pin">
+			<h3>고정될 예정</h3>
+			<img src="images/kim1.png"/>
+		</div>
+		<div class="spacer">spacer</div>
+		<div id="trigger2"></div>
+		<div id="pin2">
+			<h3>고정될 예정2</h3>
+			<img src="images/rabbit2.png"/>
+		</div>
+		<div class="spacer">spacer</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
+	<!-- 디버깅에 필요한 javascript -->
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript">
+		//ScrollMagic 객체를 생성해서 참조값 변수에 담기 
+		var controller=new ScrollMagic();
+		//ScrollScene 객체를 생성해서 설정한후  참조값 변수에 담기
+		var scene=new ScrollScene({
+			triggerElement:"#trigger", //pin 고정시작점 결정 
+			duration:200  //고정시킬 px 의 길이 결정 
+		});
+
+		scene.setPin("#pin"); //고정 시킬 대상 결정 
+		scene.addTo(controller);
+
+		//디버깅을 위한 코드 
+		scene.addIndicators();
+
+
+		var scene2=new ScrollScene({
+			triggerElement:"#trigger2", //pin 고정시작점 결정 
+			duration:200  //고정시킬 px 의 길이 결정 
+		});
+		scene2.setPin("#pin2"); //고정 시킬 대상 결정 
+		scene2.addTo(controller);
+
+		//디버깅을 위한 코드 
+		scene2.addIndicators();
+	</script>
+</body>
+</html>

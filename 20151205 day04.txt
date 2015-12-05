@@ -1,0 +1,68 @@
+bootStrap 3.3.6
+
+=============================================
+
+GridSystem
+
+
+.container
+.container-fluid
+
+.row  ==> 하나의행을 12등분 할 예정
+
+.col-xs-12  ==> extra small  (768px 미만, phone)
+.col-sm-12  ==> small  (768~992px 미만, tablet)
+.col-md-12  ==> medium  (992~1200px 미만, Desktop)
+.col-lg-12  ==> large  (1200px 이상)
+
+.col-xs-offset-3  ==> 왼쪽 그리드 3칸을 띄움(띄어쓰기)
+
+.col-sm-push-3  ==> sm일 경우 그리드 3칸을 밀음
+.col-sm-pull-9  ==> sm일 경우 그리드 9칸을 당김
+
+
+.clearfix  ==> float된 속성을 취소함
+.visible-xs-block  ==>  xs영역에서만 블록속성으로 보이도록 함 (이미지 크기가 다른것들을 제대로 밑으로 떨어뜨려주기 위함)
+
+
+.hidden-xs         ==> xs에서는 안보이도록 함
+.visible-xs-block  ==> xs에서는 블록속성으로 보이도록 함
+.visible-xs-inline ==> xs에서는 인라인속성으로 보이도록 함
+.visible-xs-inline-block  ==> xs에서는 인라인-블록 속성으로 보이도록 함
+
+
+=============================================
+
+색상 : primary / success / info / warning / danger
+
+
+text-left
+text-center
+text-right
+
+table
+table-borderd
+table-hover
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

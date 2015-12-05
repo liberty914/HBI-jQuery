@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_DomMake.html</title>
+	<style>
+	.panel{
+		border:1px solid red;
+		border-radius: 10px;
+		width:200px;
+	}
+	.panel img{
+		max-width: 100%;
+	}
+	</style>
+</head>
+<body>
+<input type="text" id="inputMsg"/>
+<button id="addBtn">추가</button>
+<ul>
+	<li>하나</li>
+	<li>두울</li>
+</ul>
+<div class="image-panel">
+	<div class="panel">
+		<h3>이미지1</h3>
+		<img src="images/image1.png"/>
+	</div>
+</div>
+<button id="moreBtn">더보기</button>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+
+	(function(){
+		//send 라는 이름의 함수 만들기 
+		var send=function(){
+			//입력한 문자열 읽어오기 
+			var msg=$("#inputMsg").val();
+			if(msg==""){
+				return;
+			}
+			$("<li/>").text(msg).appendTo("ul");
+			$("#inputMsg").val("").focus();		
+		};
+
+		$("#addBtn").click(function(){
+			send();
+		});
+		//keyup 이벤트 처리 
+		$("#inputMsg").keyup(function(event){
+			//눌러진 키의 코드값을 얻어온다. 
+			var keyCode=event.keyCode;
+			console.log(keyCode);
+			if(keyCode==13){//엔터키를 눌렀다면 
+				send();
+			}
+		});
+		//더보기 버튼을 눌렀을때 
+		$("#moreBtn").click(function(){
+			//추가될 이미지 정보
+			var item={
+				title:"김구라 이미지",
+				src:"images/kim1.png"
+			};
+			var $div=$("<div/>").addClass("panel");
+			var $h3=$("<h3/>").text(item.title);
+			var $img=$("<img/>").attr("src", item.src);
+			$div
+			.append($h3)
+			.append($img)
+			.appendTo(".image-panel")
+			.hide()
+			.fadeIn();
+		});
+	})();
+
+</script>
+</body>
+</html>

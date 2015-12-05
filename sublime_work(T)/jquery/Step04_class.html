@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.bg-yellow{
+		background-color: yellow;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+	}
+	</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	$(".box").on("mouseover", function(){
+		//클래스 속성의 value 추가 
+		$(this).addClass("bg-yellow");
+	});
+	$(".box").on("mouseleave", function(){
+		//클래스 속성의 value 제거 
+		$(this).removeClass("bg-yellow");
+	});
+	$(".box").on("mousedown", function(){
+		//클래스 속성의 value 토글 
+		$(this).toggleClass("bg-yellow");
+	});
+</script>	
+</body>
+</html>

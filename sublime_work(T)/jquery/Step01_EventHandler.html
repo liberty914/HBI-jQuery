@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_EventHandler.html</title>
+	<style>
+	button{
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+<button id="myBtn">눌러보셈</button>
+<button id="myBtn2">눌러보셈2</button>
+<a href="#">링크1</a>
+<a href="#">링크2</a>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	// .on("이벤트명", 콜백 함수) 
+	$("#myBtn").on("click",function(){
+		alert("#myBtn 을 눌렀네?");
+	});
+	//click 이벤트 처리
+	$("#myBtn2").on("click", function(){
+		alert("#myBtn2 을 눌렀네?");
+	});
+	//focus 이벤트 처리
+	$("#myBtn").on("focus", function(){
+		$("#myBtn").css("background-color","yellow");
+	});
+	//blur 이벤트 처리 
+	$("#myBtn").on("blur", function(){
+		$("#myBtn").css("background-color","white");
+	});
+	$("#myBtn").on("mouseover", function(){
+		$("#myBtn").css("background-color","#cecece");
+	});
+	$("#myBtn").on("mouseleave", function(){
+		$("#myBtn").css("background-color","white");
+	});
+
+
+
+</script>	
+</body>
+</html>

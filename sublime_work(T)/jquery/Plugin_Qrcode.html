@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin_Qrcode.html</title>
+</head>
+<body>
+<div id="myQrcode">
+	
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.qrcode-0.12.0.js"></script>	
+<script>
+	$("#myQrcode").qrcode({
+		render:"div",
+		text:"http://study.kimgura.net",
+		fill:"#00ff00",
+		size:400
+	});
+</script>
+</body>
+</html>

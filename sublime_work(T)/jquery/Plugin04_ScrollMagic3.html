@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin04_ScrollMagic3.html</title>
+	<style>
+	#header{
+		height: 300px;
+		background-color: #00ff00;
+	}
+	#navbar{
+		height: 50px;
+		background-color: #000000;
+		color: #ffffff;
+	}
+	.spacer{
+		height: 1000px;
+		background-color: #cecece;
+	}
+	</style>
+</head>
+<body>
+	
+<div id="header">header</div>
+<div id="trigger"></div>
+<div id="navbar">navbar</div>
+<div class="spacer"></div>	
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollMagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript">
+		var controller=new ScrollMagic();
+
+		var scene = new ScrollScene({
+			triggerElement:"#trigger",
+			triggerHook:"onLeave"
+		});
+
+		scene.setPin("#navbar");
+		scene.addTo(controller);
+
+		scene.addIndicators();
+
+	</script>
+</body>
+</html>

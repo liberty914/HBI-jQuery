@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin_LazyLoad.html</title>
+	<style>
+	.spacer{
+		height: 500px;
+		background-color: #cecece;
+	}
+	img{
+		width: 300px;
+		height: 300px;
+	}
+	</style>
+</head>
+<body>
+<div>
+	<img data-original="images/image1.png"/>
+</div>
+<div class="spacer"></div>
+<div>
+	<img data-original="images/image2.png"/>
+</div>
+<div class="spacer"></div>
+<div>
+	<img data-original="images/image3.png"/>
+</div>
+<div class="spacer"></div>
+<div>
+	<img data-original="images/image4.png"/>
+</div>
+<div class="spacer"></div>
+<div>
+	<img data-original="images/image5.png"/>
+</div>
+<div class="spacer"></div>	
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script>
+	$("img").lazyload({
+		effect:"fadeIn"
+	});
+</script>	
+</body>
+</html>

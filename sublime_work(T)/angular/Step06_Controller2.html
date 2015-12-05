@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_Controller2.html</title>
+	<script src="js/angular.min.js"></script>
+	<script>
+	var myApp=angular.module("myApp",[]);
+	myApp.controller("PhoneListCtrl",["$scope",function($scope){
+		//ajax 통신으로 받아온 데이터라고 가정하자
+		var data=[];
+		data.push({name:"아이폰 6",snippet:"가볍고 이쁜 폰입니다.",price:80});
+		data.push({name:"겔럭시 S5",snippet:"삼성에서 만든 방수폰 입니다.",price:110});
+		data.push({name:"Nexus 6",snippet:"Google 테블릿 입니다.",price:65});
+		data.push({name:"옵티머스 G",snippet:"LG 핸드폰 입니다.", price:80});
+		//영역에 phones 라는 공간에 Array Type 데이터를 저장한다. 
+		$scope.phones=data;
+	}]);
+	</script>
+</head>
+<body ng-controller="PhoneListCtrl">
+	<div class="container">
+		<input ng-model="keyword" type="text" placeholder="검색어 입력..."/>
+		<select ng-model="orderValue">
+			<option value="" selected>정렬</option>
+			<option value="name">이름</option>
+			<option value="price">가격</option>
+		</select>
+		<p>입력한 검색어: <strong>{{keyword}}</strong></p>
+		<p>정렬 방식: <strong>{{orderValue}}</strong></p>
+		<table>
+			<caption>전화기 목록입니다.</caption>
+			<thead>
+				<tr>
+					<th>이름</th>
+					<th>설명</th>
+					<th>가격</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="tmp in phones | filter:keyword | orderBy:orderValue">
+					<td>{{tmp.name}}</td>
+					<td>{{tmp.snippet}}</td>
+					<td>{{tmp.price}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

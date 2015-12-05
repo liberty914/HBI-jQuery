@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GridSystem</title>
+</head>
+<body>
+<div class="container-fluid">  <!--유동형 컨테이너, 폭을 100% 모두 차지-->
+	<h3>.container-fluid</h3>
+	<p>device의 폭을 100% 다 사용하는 유동형 container</p>
+</div>
+
+<div class='container'>  <!--특정 영역에서는 가운데 정렬된 컨테이너, 폭 768픽셀보다 작을때는 위와같음-->
+	<h3>.container</h3>
+	<p>폭이 768px 미만에서는 100%, 그 이상에서는 가운데 정렬된 container</p>
+</div>
+
+<div class='container'>
+	<div class="col-xs-1 col-sm-2 col-md-4 col-lg-8">dsadsadsadsadasadadassa</div>
+</div>
+
+<div class="container-fluid">
+	<h3>.container-fluid 를 나눠 갖기</h3>
+	<div class="row">  <!--개별적인 행(row)을 12등분 할것이다.-->
+		<div class="col-xs-6">col-xs-6</div>  <!--column(컬럼) width: 50%, float: left-->
+		<div class="col-xs-6">col-xs-6</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+	</div>
+</div>
+<div class="container">
+	<h3>.container 를 나눠 갖기</h3>
+	<div class="row">
+		<div class="col-xs-6">col-xs-6</div>
+		<div class="col-xs-6">col-xs-6</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-3">col-xs-3</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+	</div>
+</div>
+<div class="container">
+	<h3>.col-xs-6 과 .col-sm-3 적용하기</h3>
+	<div class="row">
+		<div class="col-xs-6 col-sm-3">div</div>  <!--클래스의 적용순서는 무관하다-->
+		<div class="col-xs-6 col-sm-3">div</div>
+		<div class="col-sm-3 col-xs-6">div</div>
+		<div class="col-sm-3 col-xs-6">div</div>
+		<!--BootStrap.css 자체의 순서가 xs-sm-md-lg 의 순서대로 적용되어있으며,
+		    xs를 제외하고, sm부터는 각각 미디어쿼리에 감싸져있기 때문에,
+		    크기가 xs보다 클때에는 나중에 선언된 sm의 CSS가 적용되는것이다. -->
+	</div>
+	<div class="row">
+		<div class="col-xs-6 col-sm-3">
+			<img src="images/image1.png"/>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<img src="images/image2.png"/>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<img src="images/image3.png"/>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<img src="images/image4.png"/>
+		</div>
+	</div>
+	<h3>.col-sm-6 만 정의하기</h3>
+	<div class="row">
+		<div class="col-sm-6">col-sm-6</div>
+		<div class="col-sm-6">col-sm-6</div>
+	</div>
+	<h3>.col-sm-6 .col-md-3</h3>
+	<div class="row">
+		<div class="col-sm-6 col-md-3">div</div>
+		<div class="col-sm-6 col-md-3">div</div>
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
+
+<!-- <link rel='stylesheet' href='css/bootstrap-4.0.0-alpha.css' /> -->
+<link rel='stylesheet' href='css/bootstrap-3.3.6.css' />
+<link rel='stylesheet' href='css/bootstrap-theme.css' />
+<style>
+/*.container-fluid { border: 1px solid black;}*/
+div { border: 1px solid red; }
+.row { border: 1px solid blue; }
+.row div { border: 1px dotted green; }
+img { max-width: 100%; }
+</style>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_FontAwesome.html</title>
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+	<style>
+	a .fa-download{
+		color: #000000;
+		text-decoration: none;
+		font-size: 50px;
+	}
+	a .fa-download:hover{
+		color: #cecece;
+	}
+	/* 스크린 리더기에서만 보일수 있도록 하는 css */
+	.sr-only {
+	  position: absolute;
+	  width: 1px;
+	  height: 1px;
+	  padding: 0;
+	  margin: -1px;
+	  overflow: hidden;
+	  clip: rect(0, 0, 0, 0);
+	  border: 0;
+	}
+	a .fa-ellipsis-v{
+		color: #000000;
+		font-size: 50px;
+		text-decoration: none;
+	}
+	a .fa-ellipsis-v:hover{
+		color: #cecece;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: #00ff00;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+<a href="javascript:">눌러보셈</a>
+<a href="">
+	<span class="fa fa-download"></span>
+	<span class="sr-only">다운로드</span>
+</a>
+<br/>
+<a href="#"><span class="fa fa-ellipsis-v"></span></a>
+<br/>
+<div class="box"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	$("a .fa-download").click(function(){
+		//원하는 javascript 
+		alert("download 합니다.");
+		//기본 이벤트 막기 
+		return false;
+	});
+
+	$("a .fa-ellipsis-v").click(function(){
+		$(".box").slideToggle();
+	});
+</script>
+</body>
+</html>

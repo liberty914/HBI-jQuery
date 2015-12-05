@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scrollMagic_example.html</title>
+	<style>
+		.container{
+			width:960px;
+			margin: 0 auto;
+		}
+		.nav-bar{
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			padding: 20px;
+			background-color:#dddddd;
+		}
+		.spacer{
+			height: 400px;
+			background-color: #cecece;
+		}
+		.row:before, .row:after{
+			display: table;
+			content: " ";
+		}
+		.row:after{
+			clear: both;
+		}
+		.row > .col{
+			float: left;
+			width: 50%;
+		}
+		#pin{
+			background-color: #00ff00;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<a href="#">one</a>
+		<a href="#">two</a>
+		<a href="#">three</a>
+	</div>
+	<div class="container">
+		<div class="spacer"></div>
+		<div id="trigger"></div>
+		<div class="row">
+			<div class="col">
+				<h1>메인 컨텐츠</h1>
+			</div>
+			<div class="col">
+				<div id="pin">
+					<h1>사이드 컨텐츠</h1>
+					<img src="images/kim1.png"/>
+				</div>
+				
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollMagic.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript">
+		var controller=new ScrollMagic();
+
+		var scene = new ScrollScene({
+			triggerElement:"#trigger",
+			triggerHook:"onLeave",
+			offset: -60 //trigger 위치에 58px 덜가서 pin 시키기
+		});
+
+		scene.setPin("#pin");
+		scene.addTo(controller);
+
+		scene.addIndicators();
+
+	</script>
+</body>
+</html>

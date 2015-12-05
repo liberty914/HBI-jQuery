@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_DataType.html</title>
+	<style>
+	/*여기는 css 영역 입니다. */
+	h2{ color: red;}
+	</style>
+	<script>
+	//여기는 javascript 영역 입니다.
+	alert("페이지가 로딩 중입니다.");
+	</script>
+</head>
+<body>
+<script>
+	//javascript 영역 
+
+	//number type
+	var num=10;
+	var num2=10.1;
+	//string type
+	var name="김구라";
+	//boolean type 
+	var isRun=true;
+	var isWait=false;
+	//object type
+	var obj={};
+	var mem={num:1,name:"김구라",addr:"노량진"};
+	//object => array type
+	var arr=[];
+	var arr2=[10,20,30,40,50];
+	var arr3=["하나","두울","세엣"];
+
+	//function type 
+	var f = function(){};
+	var f2 = function(){
+		console.log("1");
+		console.log("함수 수행중");
+		console.log("함수 종료중..");
+	}; 
+
+	function f3(){
+		console.log("2");
+		console.log("함수 수행중");
+		console.log("함수 종료중..");
+	};
+
+	// 1회용 함수를 만들어서 바로 사용하기 
+	(function(){
+		var test="안녕하세요";
+		console.log(test);
+	})();
+	
+	// undefined type
+	var a = undefined;
+	var b; //변수를 선언만하고 값을 넣어주지 않으면 undefined 데이터가 들어간다 .
+
+
+</script>	
+<h1>html 영역 입니다.</h1>
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore accusamus eligendi voluptas, perferendis, vero nulla alias amet consectetur libero mollitia vitae odio quod laborum autem, reprehenderit pariatur commodi natus. Culpa.</h2>
+<script>
+	//javascript 영역 
+	alert("페이지 로딩이 완료 됩니다");
+</script>	
+</body>
+</html>

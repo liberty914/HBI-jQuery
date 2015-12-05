@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_ShowHide.html</title>
+</head>
+<body>
+<button id="hideBtn">숨기기</button>
+<button id="showBtn">보이기</button>
+<button id="toggleBtn">토글</button>
+
+<br/>
+<img src="images/image1.png" width="200" />
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	$("img").on("mouseover", function(){
+		$(this).fadeTo(1000, 0.2);
+	});
+
+	//$("#hideBtn").on("click", function(){});
+	$("#hideBtn").click(function(){
+		//$("img").hide();
+		//$("img").fadeOut();
+		$("img").slideUp();
+	});
+	$("#showBtn").click(function(){
+		//$("img").show();
+		//$("img").fadeIn();
+		/*
+		$("img").slideDown(1000, function(){
+			alert("짠!");
+		});
+		*/
+		$("img").slideDown({
+			duration:1000,
+			complete:function(){
+				alert("짠!");
+			}
+		});
+	});
+	$("#toggleBtn").click(function(){
+		//$("img").toggle();
+		//$("img").fadeToggle();
+		$("img").slideToggle();
+	});
+</script>	
+</body>
+</html>

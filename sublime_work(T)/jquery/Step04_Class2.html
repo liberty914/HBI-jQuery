@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step04_Class2.html</title>
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+	<style>
+	ul { list-style-type: none; overflow: hidden; width:300px; }
+	ul li { float:left; width: 100px; }
+	ul li a { display: block; padding: 10px; width:80px; }
+	ul li a:hover{ background-color: #eeeeee;}
+	.active{
+		background-color: #cecece;
+		color:white;
+	}
+	#tabContents p{
+		display: none;
+	}
+	#tabContents p:nth-child(1){
+		display: block;
+	}
+
+	.fa-twitter{
+		font-size: 50px;
+		color: white;
+		background-color: blue;
+		padding:10px;
+		border-radius: 50%;
+	}
+	</style>
+</head>
+<body>
+<ul>
+	<li><a href="#one" class="active">one</a></li>
+	<li><a href="#two">two</a></li>
+	<li><a href="#three">three</a></li>
+</ul>
+<div id="tabContents">
+	<p id="one">one Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aut itaque voluptatum harum provident, atque, rerum, nobis velit possimus odit ullam sit dolore quae a consectetur dolorem corrupti consequatur tempore.</p>
+	<p id="two">two Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aut itaque voluptatum harum provident, atque, rerum, nobis velit possimus odit ullam sit dolore quae a consectetur dolorem corrupti consequatur tempore.</p>
+	<p id="three">three Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aut itaque voluptatum harum provident, atque, rerum, nobis velit possimus odit ullam sit dolore quae a consectetur dolorem corrupti consequatur tempore.</p>
+</div>
+
+<span class="fa fa-twitter fa-spin"></span>
+<span class="fa fa-facebook"></span>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	$("ul li a").click(function(){
+		//모든 active 클래스 제거 
+		$("ul li a").removeClass("active");
+		//이벤트가 일어난 요소에 active 클래스 추가
+		$(this).addClass("active");
+		//모든 텝 컨텐츠 안 보이게 
+		$("#tabContents p").hide();
+		//클릭한 요소의 href 속성의 value 읽어오기
+		var selector=$(this).attr("href");
+		//읽어온 문자열을 jquery 선택자로 사용해서 보이게 하기
+		$(selector).fadeIn();
+	});
+</script>	
+</body>
+</html>

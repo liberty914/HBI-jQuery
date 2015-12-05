@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_Form.html</title>
+</head>
+<body>
+<form action="login_action" method="post" id="myForm">
+	<label for="id">아이디</label>
+	<input type="text" id="id" name="name"/>
+	<label for="pwd">비밀번호</label>
+	<input type="password" id="pwd" name="pwd"/>
+	<button type="submit">로그인</button>
+</form>	
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	//$("#myForm").on("submit", function(){});
+	$("#myForm").submit(function(){
+		//입력한 id 를 읽어온다.
+		var inputId=$("#id").val();
+		if(inputId==""){
+			alert("아이디를 입력하세요!");
+			//focus 를 id 에 준다.
+			$("#id").focus();
+			return false;// 폼 전송 막기 
+		}
+		//입력한 pwd 를 읽어온다.
+		var inputPwd=$("#pwd").val();
+		if(inputPwd==""){
+			alert("비밀번호를 입력하세요!");
+			$("#pwd").focus();
+			return false;
+		}
+	});
+</script>
+</body>
+</html>

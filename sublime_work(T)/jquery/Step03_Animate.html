@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step03_Animate.html</title>
+	<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		position: relative;
+		border: 1px solid red;
+	}
+	</style>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+	//이미지 포함 모든 문서 객체가 준비 되었을때 실행할 함수 등록 
+	window.onload=function(){
+
+	};
+	
+	//이미지 로딩을 제외한 모든 문서 객체가 준비 되었을때 실행할 함수 등록 
+	//$(document).ready(function(){});
+	$(function(){
+		$(".box").on("mouseover", function(){
+			$(this).animate({
+				"left":"+=50px"
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>	
+	
+</body>
+</html>

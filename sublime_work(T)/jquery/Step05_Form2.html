@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_Form2.html</title>
+</head>
+<body>
+<form action="signup_action" method="post" id="myForm">
+	아이디 <input type="text" name="id"/>
+	<button id="checkBtn">중복확인</button><br/>
+	비밀번호 <input type="text" name="pwd"/><br/>
+	비밀번호 확인 <input type="text" name="pwd2"><br/>
+	성별 <br/>
+	<input type="radio" name="gender" value="man" checked/>남 
+	<input type="radio" name="gender" value="woman"/>여
+	<br/>
+	이메일 주소 <input type="text" name="email"/><br/>
+	이메일 주소 <input type="text" name="email2"/><br/>
+	하고 싶은말 <br/>
+	<textarea name="etc" cols="30" rows="10"></textarea>
+	<button type="submit">가입</button>
+</form>	
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	//아이디 중복 확인을 했는지 여부 
+	var isCheckedId=false;
+
+	//아이디 중복 확인 버튼을 눌렀을때 실행할 함수 등록 
+	$("#checkBtn").click(function(){
+		//1. 입력한 아이디를 읽어와서
+		var inputId = $("input[name=id]").val();
+		//2. ajax 를 이용해서 서버에 보내고 응답을 받는다.
+
+		//3. form 전송 막기
+		return false;
+	});
+	//폼 전송 이벤트가 발생했을때 실행할 함수 등록 
+	$("#myForm").submit(function(){
+		if(isCheckedId==false){
+			alert("아이디 중복 확인을 하세요!");
+			//return false;//폼 전송 막기 
+		}
+
+		var pwd=$("input[name=pwd]").val();
+		var pwd2=$("input[name=pwd2]").val();
+		if(pwd != pwd2){
+			alert("비밀번호를 확인 하세요!");
+			$("#pwd").focus();
+			//return false;//폼전송 막기 
+		}
+		//입력한 이메일 주소 
+		var inputEmail=$("input[name=email]").val();
+
+		//이메일 유효성을 검증할수 있는 정규표현식 객체 
+		var emailReg=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;
+		//검증해서 결과를 boolean type 으로 받기 
+		var result = emailReg.test(inputEmail);
+		if(result==false){
+			alert("이메일 형식에 맞지 않습니다.");
+			return false;
+		}
+	});
+
+	//키보드 이벤트를 이용해서 검증하기
+	$("input[name=email2]").keyup(function(){
+		var inputEmail=$(this).val();
+		//이메일 유효성을 검증할수 있는 정규표현식 객체 
+		var emailReg=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/;
+		//검증해서 결과를 boolean type 으로 받기 
+		var result = emailReg.test(inputEmail);
+		if(result){
+			$(this).css("border-color","#00ff00");
+		}else{
+			$(this).css("border-color","#ff0000");
+		}
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animate.css</title>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<style>
+	.container{
+		width: 980px;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Animate Css 테스트</h1>
+	<form class="animated bounceInDown">
+		<label>아이디</label>
+		<input type="text"/><br/>
+		<label>비밀번호</label>
+		<input type="text"/><br/>
+		<button>로그인</button>
+	</form>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+	$("input").focus(function(){
+		$(this).addClass("animated swing");
+	});
+	$("input").on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+		$(this).removeClass("animated swing");
+	});
+
+	$("form button").hover(function(){
+		$(this).addClass("animated pulse");
+	});
+
+	$("form button").on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+		$(this).removeClass("animated pulse");
+	});
+</script>
+</body>
+</html>

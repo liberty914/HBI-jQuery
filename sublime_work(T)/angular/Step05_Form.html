@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_Form.html</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+<!-- html5 의 디폴트 validation 을 해제 하고 싶을때는
+	novalidate 속성을 form 에 추가 한다.  -->
+<form action="login" name="myForm" novalidate>
+	<input type="text" name="id" placeholder="id 입력..."
+		ng-model="id" ng-required="true"/>
+	<p ng-hide="myForm.id.$valid">반드시 입력하세요...</p>
+	<button type="submit" 
+		ng-disabled="myForm.$invalid">전송</button>
+</form>	
+<p>myForm.$valid=<strong>{{myForm.$valid}}</strong></p>
+<p>myForm.$invalid=<strong>{{myForm.$invalid}}</strong></p>
+<p>myForm.id.$valid=<strong>{{myForm.id.$valid}}</strong></p>
+</body>
+</html>

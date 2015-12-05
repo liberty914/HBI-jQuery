@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Step04_ngClass</title>
+	<style>
+	body{
+		text-align: center;
+	}
+	span{
+		display: inline-block;
+	}
+	.red-font{
+		color: red;
+	}
+	.large-font{
+		font-size: 50px;
+	}
+	</style>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<input type="checkbox" ng-model="one"/> red<br/>
+	<input type="checkbox" ng-model="two"/> large<br/>
+	<span ng-class="{'red-font':one,'large-font':two}">ABCD</span>
+</body>
+</html>

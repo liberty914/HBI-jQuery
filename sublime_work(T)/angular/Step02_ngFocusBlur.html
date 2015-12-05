@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_ngFocusBlur.html</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body ng-init="target=''" ng-init="target2=''">
+<a href="#" 
+	ng-focus="target='Anchor'"
+	ng-blur="target2='Anchor'">Anchor</a>
+<button ng-focus="target='Button'"
+	ng-blur="target2='Button'">Button</button>
+<input ng-focus="target='input'" 
+	ng-blur="target2='input'"type="text" placeholder="input 요소" />
+<p>{{target}} 에 포커스가 왔네?</p>	
+<p>{{target2}} 가 포커스를 잃었네?</p>
+</body>
+</html>

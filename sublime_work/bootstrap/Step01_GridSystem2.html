@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_GridSystem2.html</title>
+</head>
+<body>
+<div class="container">
+	<h3>offset 적용하기</h3>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-1">offset-1</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-2">offset-2</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">offset-3</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-1">div</div>
+		<div class="col-xs-4 col-xs-offset-1">왼쪽offset-1</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-1">div</div>
+		<div class="col-xs-4 col-sm-offset-1">왼쪽offset-1</div>
+	</div>
+
+	<h3>Nesting Column (칼럼안에 칼럼)</h3>
+	<div class="row">
+		<div class="col-xs-6">  <!--50%를-->
+			<div class="row">  <!--다시 12등분 했음-->
+				<div class="col-xs-1">1</div>
+				<div class="col-xs-1">2</div>
+				<div class="col-xs-1">3</div>
+				<div class="col-xs-1">4</div>
+				<div class="col-xs-1">5</div>
+				<div class="col-xs-1">6</div>
+				<div class="col-xs-1">7</div>
+				<div class="col-xs-1">8</div>
+				<div class="col-xs-1">9</div>
+				<div class="col-xs-1">10</div>
+				<div class="col-xs-1">11</div>
+				<div class="col-xs-1">12</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="row">
+				<div class="col-xs-4">1</div>
+				<div class="col-xs-4">2</div>
+				<div class="col-xs-4">3</div>
+			</div>
+		</div>
+	</div>
+
+	<h3>clearfix 의 사용</h3>
+	<div class="row">
+		<div class="col-xs-6 col-sm-3">
+			<div class="large-box">1</div>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<div class="small-box">2</div>
+		</div>
+		<!-- ★★★xs 에서만 block 되는 div 로 fix 한다. -->
+		<div class="clearfix visible-xs-block"></div>
+		<div class="col-xs-6 col-sm-3">
+			<div class="small-box">3</div>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<div class="small-box">4</div>
+		</div>
+	</div>
+	<h3>Column Ordering (칼럼 정렬)</h3>
+	<div class="row">
+		<div class="col-sm-9 col-sm-push-3">
+			<div class="small-box">앞</div>
+		</div>
+		<div class="col-sm-3 col-sm-pull-9">
+			<div class="small-box">뒤</div>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
+
+
+
+<link rel="stylesheet" href="css/bootstrap-3.3.6.css"/>
+<style>
+div{
+	border: 1px solid red;
+}
+.row{
+	border: 1px solid blue;
+}
+.row div{
+	border: 1px dotted green;
+}
+.small-box{
+	width: 100%;
+	height: 100px;
+	background-color: #ff00ff;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+.large-box{
+	width: 100%;
+	height: 200px;
+	background-color: #00ffff;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+</style>

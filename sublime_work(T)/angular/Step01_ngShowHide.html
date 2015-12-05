@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_ngShowHide.html</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+<!-- ng-show 는 보일지에 대한 여부 -->	
+<img ng-show="false" src="images/image1.png" width="200"/>
+<!-- ng-hide 는 숨길지에 대한 여부 -->
+<img ng-hide="true" src="images/image2.png" width="200"/>
+<input type="checkbox" ng-init="one=false" ng-model="one"/>	<span>{{one}}</span><br/>
+<input type="checkbox" ng-model="one">
+<br/>
+<img src="images/kim1.png" ng-show="one"/>
+</body>
+</html>

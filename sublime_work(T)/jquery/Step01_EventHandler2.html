@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step01_EventHandler2.html</title>
+	<style>
+	img{ width: 200px;}
+	</style>
+</head>
+<body>
+<img id="one" src="images/image1.png"/>
+<img id="two" src="images/image2.png"/>
+<img id="three" src="images/image3.png"/>	
+<script src="js/jquery-1.11.3.js"></script>	
+<script>
+	$("img").on("mouseover", function(){
+		//이벤트가 일어난 요소를 선택해서 동작
+		$(this).attr("src","images/image6.png");
+	});
+
+	$("#one").on("mouseleave", function(){
+		$(this).attr("src","images/image1.png");
+	});
+
+</script>
+</body>
+</html>

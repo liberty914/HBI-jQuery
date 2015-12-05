@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin01_ImgLiquid.html</title>
+	<style>
+	.imagePanel{
+		width: 200px;
+		height: 200px;
+		border: 1px solid red;
+	}
+	</style>
+</head>
+<body>
+<div class="imagePanel">
+	<img src="images/1.jpg"/>
+</div>
+<div class="imagePanel">
+	<img src="images/2.jpg"/>
+</div>
+<div class="imagePanel">
+	<img src="images/3.jpg"/>
+</div>
+<script src="js/jquery-1.11.3.js"></script>	
+<script src="js/imgLiquid.js"></script>
+<script>
+	$(".imagePanel").imgLiquid({
+		fill:true,
+		horizontalAlign: "100%",
+		verticalAlign:"80%"
+	});
+</script>
+</body>
+</html>
