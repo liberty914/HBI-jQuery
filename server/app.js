@@ -35,6 +35,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../sublime_work/3_public')));
+//==> index.html 이 로딩될 HOME 디렉토리를 설정함
+//==> port설정은 bin폴더의 www파일에서 설정함.
 
 app.use('/', routes);
 app.use('/users', users);
