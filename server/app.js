@@ -1,6 +1,15 @@
+/*
+서버단 프로그래밍은 app.js에서 한다.
+★ app.js를 한번 수정하고 적용하려면, 반드시 서버를 내렸다가 올려야한다!
 
-//서버단 프로그래밍은 app.js에서 한다.
-//★ app.js를 한번 수정하면 반드시 서버를 껐다가 켜야한다!
+NodeJS 설치, Stable 5.1.0 버전으로 하였음
+
+이 파일을 실행하려면 npm install express 를 해줘야한다.  ==>  안해도 됨. 이미 다 깔려있다.
+2015.12.07 기준 express 4.13.3 버전이다.
+
+선생님이 공유해주신 폴더(server)로 이동후
+이곳에서 명령프롬프트 열기, "npm start" 해주면 서버가 실행된다.
+*/
 
 
 var express = require('express');
@@ -25,7 +34,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../sublime_work/3_public')));
 
 app.use('/', routes);
 app.use('/users', users);

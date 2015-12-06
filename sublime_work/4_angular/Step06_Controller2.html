@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_Controller2.html</title>
+  <style>
+  .container { margin: 0 auto; width: 450px; }  /* 가운데 정렬 */
+  table { border-collapse: collapse; }  /* 테이블의 선을 단선으로 */
+  th, td { border: 1px solid black; padding: 15px; text-align: center; }
+  </style>
+
+	<script src="js/angular.min.js"></script>
+	<script>
+	var myApp = angular.module("myApp", []);
+	myApp.controller("PhoneListCtrl", ["$scope", function($scope){  //왜 배열로 넣었는지는 의문... 여기서 [0]번째인덱스("$scope")는 없어도된다.
+		//ajax 통신으로 받아온 데이터라고 가정하자
+		var data = [];
+		data.push({name:"아이폰 6", snippet:"b 가볍고 이쁜 폰입니다.", price:80});
+		data.push({name:"갤럭시 S5", snippet:"c 삼성에서 만든 방수폰 입니다.", price:110});
+		data.push({name:"Nexus 6", snippet:"d Google 테블릿 입니다.", price:65});
+		data.push({name:"옵티머스 G", snippet:"a 가성비 좋은 LG 핸드폰 입니다.", price:80});
+		//$scope영역에 phones 라는 공간에 Array Type 데이터를 저장한다.
+		$scope.phones = data;
+	}]);
+	</script>
+</head>
+
+<!--
+  ng-app='모듈명'  ==>  angular.module('모듈명', []); 의 module 을 해당 엘리먼트에 적용시킨다.
+                      (모듈을 생성하지 않고 angular의 기능을 이용하려면 ng-app 만 입력하도록 한다.
+  ng-controller='컨트롤러명'  ==>  myApp.controller("컨트롤러명", function($scope) {}); 의 컨트롤러를 해당 엘리먼트에 적용시킨다.
+  ng-model='변수명'   ==>  input태그의 value안의 값을 해당 변수에 담는다. ng-model 속성을 사용하면 value 속성을 사용할 수 없다.
+                         checkbox 에 true를 넣으면 선택되는걸로 보아서, 꼭 value는 아닌것같고, input태그의 "상태" 라고 생각하는게 좋을지도 모르겠다.
+  ng-repeat='변수명 in [배열] | filter: 검색어 | orderBy: 정렬기준'
+    ==>  자바스크립트의 for in 반복문처럼 배열에서 각 인덱스별로 변수에 담고, 해당 엘리먼트를 포함한채로 반복한다.
+    ==>  filter: 검색어   -> 필터를 적용하여 해당 검색어가 포함된 컨텐츠만 화면에 보여주고, 나머지는 숨긴다.
+    ==>  orderBy: 정렬기준 -> ng-model의 값을 사용하여, 해당 value를 넣어주면, $scope.value 를 a-b-c-d 순서(ASC)대로 출력한다.
+
+  {{변수}}  ==>  도큐먼트에 해당 변수를 ${ EL } 표현식처럼 뿌려준다. 내부적으로 class='ng-binding' 이 추가된다.
+  $scope  ==>  {{ }} 자체라고 이해하면 된다.
+               {{name}} 은 $scope.name 의 데이터를 보여준다.
+-->
+
+<body ng-controller="PhoneListCtrl">
+	<div class="container">
+		<input ng-model="keyword" type="text" placeholder="검색어 입력..."/>
+		<select ng-model="orderValue">
+			<option value="" selected>정렬</option>
+			<option value="name">이름</option>
+			<option value="price">가격</option>
+			<option value="snippet">설명ㅋ</option>
+		</select>
+		<p>입력한 검색어: <strong>{{keyword}}</strong></p>
+		<p>정렬 방식: <strong>{{orderValue}}</strong></p>
+		<table>
+			<caption>전화기 목록입니다.</caption>
+			<thead>
+				<tr>
+					<th>이름</th>
+					<th>설명</th>
+					<th>가격</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="tmp in phones | filter: keyword | orderBy: orderValue">
+					<td>{{tmp.name}}</td>
+					<td>{{tmp.snippet}}</td>
+					<td>{{tmp.price}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

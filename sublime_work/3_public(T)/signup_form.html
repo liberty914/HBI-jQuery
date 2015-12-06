@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>signup_form.html</title>
+</head>
+<body>
+<form action="signup" method="post">
+	아이디 <input type="text" name="id"/>
+	<button id="checkBtn">중복확인</button>
+	<span id="checkResult"></span><br/>
+	비밀번호 <input type="text" name="pwd"/><br/>
+	전화번호 <input type="text" name="phone"/><br/>
+	<button type="submit">가입</button>
+</form>	
+<script src="js/jquery-1.11.2.js"></script>
+<script>
+	//중복확인 버튼을 눌렀을때 실행할 함수 등록 
+	$("#checkBtn").click(function(){
+		//입력한 id 를 읽어온다.
+		var id=$("input[name=id]").val();
+		//ajax 를 이용해서 서버에 전송하고 응답 받기 
+		$.ajax({
+			url:"/idCheck",
+			method:"get",
+			data:{"id":id},
+			success:function(data){
+				//data => {isPossible:true} or
+				// {isPossible:false}
+				if(data.isPossible){//사용가능
+					$("#checkResult")
+					.text("사용가능");
+				}else{//사용 불가 
+					$("#checkResult")
+					.text("사용불가");
+				}
+			}
+		});
+
+		return false;//폼 전송 막기 
+	});
+</script>
+</body>
+</html>

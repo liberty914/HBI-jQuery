@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loginform.html</title>
+</head>
+<body>
+<form action="login" method="post" id="loginForm">
+	아이디 <input type="text" name="id"/>
+	비밀번호 <input type="text" name="pwd"/>
+	<button type="submit">로그인</button>
+</form>	
+<div>
+	<h3>웹 컨텐츠 입니다.</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum magnam laudantium est placeat consectetur nisi enim dolor, dolore provident ipsam. Odit neque dolore, esse veniam modi iste similique eaque facilis.</p>
+</div>
+<script src="js/jquery-1.11.2.js"></script>
+<script>
+	//폼에 submit 이벤트가 발생했을때 호출되는 함수 등록
+	$("#loginForm").on("submit", function(){
+		//form 에 있는 정보 읽어오기
+		var action=$(this).attr("action");
+		var method=$(this).attr("method");
+		//form 에 클라이언트가 입력한 정보 
+		var data=$(this).serialize();
+		//ajax 를 이용해서 서버에 폼 전송
+		$.ajax({
+			"url":action,
+			"method":method,
+			"data":data,
+			"success":function(data){
+				alert(data);
+				$("#loginForm").hide();
+				$("<p/>")
+				.text(data+" 님 로그인중...")
+				.prependTo("body");
+			}
+		});
+
+		return false; //폼 전송 막기 
+	});
+</script>
+</body>
+</html>

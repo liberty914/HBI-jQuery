@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loginform2.html</title>
+</head>
+<body>
+<form action="login" method="post" id="loginForm">
+	아이디 <input type="text" name="id"/>
+	비밀번호 <input type="text" name="pwd"/>
+	<button type="submit">로그인</button>
+</form>	
+<div>
+	<h3>웹 컨텐츠 입니다.</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum magnam laudantium est placeat consectetur nisi enim dolor, dolore provident ipsam. Odit neque dolore, esse veniam modi iste similique eaque facilis.</p>
+</div>
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/jquery.form.js"></script>
+<script>
+	$("#loginForm").ajaxForm(function(data){
+		$("#loginForm").hide();
+		$("<p/>")
+		.text(data+" 님 로그인중...")
+		.prependTo("body");
+	});
+</script>
+</body>
+</html>

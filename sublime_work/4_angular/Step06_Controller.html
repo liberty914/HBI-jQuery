@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_Controller.html</title>
+	<script src="js/angular.min.js"></script>
+	<script>
+	//"myApp" 라는 이름의 모듈 만들기 
+	var myApp = angular.module("myApp",[]);
+
+	//"MyCtrl" 이라는 이름의 컨트롤러 만들기 
+	myApp.controller("MyCtrl",function($scope){
+		$scope.name = "김구라";
+		$scope.nums = [10,20,30,40,50];
+		$scope.push = function(){
+			alert("버튼을 눌렀네여?");
+		};
+	});
+  
+	//"MyCtrl2" 이라는 이름의 컨트롤러 만들기 
+	myApp.controller("MyCtrl2",function($scope){
+		$scope.name = "해골";
+		$scope.names = ["하나","두울","세엣"];
+		$scope.count = 0;
+		$scope.push = function(){
+			$scope.count++;
+			$scope.names.push($scope.count);
+		};
+	});
+	</script>
+</head>
+
+<!--
+  ng-app='모듈명'  ==>  angular.module('모듈명', []); 의 module 을 해당 엘리먼트에 적용시킨다.
+                      (모듈을 생성하지 않고 angular의 기능을 이용하려면 ng-app 만 입력하도록 한다.
+  ng-controller='컨트롤러명'  ==>  myApp.controller("컨트롤러명", function($scope) {}); 의 컨트롤러를 해당 엘리먼트에 적용시킨다.
+  ng-repeat='변수명 in [배열]'  ==>  자바스크립트의 for in 반복문처럼 배열에서 각 인덱스별로 변수에 담고, 해당 엘리먼트를 포함한채로 반복한다.
+  ng-click='로직'  ==>  해당 엘리먼트가 클릭되었을 때 실행할 로직을 넣는다. 자바스크립트의 onclick 이벤트와 과 동일하다.
+  {{변수}}  ==>  도큐먼트에 해당 변수를 ${ EL } 표현식처럼 뿌려준다. 내부적으로 class='ng-binding' 이 추가된다.
+
+  $scope  ==>  {{ }} 자체라고 이해하면 된다.
+               {{name}} 은 $scope.name 의 데이터를 보여준다.
+-->
+
+<body ng-app="myApp">
+	<div ng-controller="MyCtrl">
+		<p>내이름은 {{name}}</p>
+		<ul>
+			<li ng-repeat="tmp in nums">{{tmp}}</li>
+		</ul>
+		<button ng-click="push()">눌러보셈</button>
+	</div>
+
+	<div ng-controller="MyCtrl2">
+		<p>너의 이름은 {{name}}</p>
+		<ul>
+			<li ng-repeat="tmp in names">{{tmp}}</li>
+		</ul>
+		<button ng-click="push()">눌러보셈</button><br/>
+		<p>버튼을 {{count}} 번 눌렀네?</p>
+	</div>
+</body>
+</html>
